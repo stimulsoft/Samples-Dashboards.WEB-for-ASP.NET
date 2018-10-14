@@ -1,0 +1,40 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+html, body, form {
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+select.list-box {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    width: 300px;
+    max-width: 300px;
+    overflow: auto;
+}
+
+select.list-box option {
+    font-size: 17px;
+    padding: 5px;
+}

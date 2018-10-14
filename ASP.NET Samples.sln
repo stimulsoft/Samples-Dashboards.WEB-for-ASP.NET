@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Show Dashboard in the Viewer", "Show Dashboard in the Viewer\Show Dashboard in the Viewer.csproj", "{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edit Dashboard in the Designer", "Edit Dashboard in the Designer\Edit Dashboard in the Designer.csproj", "{B96E27B6-95FE-404D-B0D0-610F47A7061E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register Data for Dashboard Template", "Register Data for Dashboard Template\Register Data for Dashboard Template.csproj", "{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runtime Dashboard Creation", "Runtime Dashboard Creation\Runtime Dashboard Creation.csproj", "{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Export Dashboard from Code", "Export Dashboard from Code\Export Dashboard from Code.csproj", "{7547454A-0380-4F59-A288-C345FAFA042B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web Demo", "Web Demo\Web Demo.csproj", "{357D5F55-267F-4EAA-94A7-0AFEC69569D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B96E27B6-95FE-404D-B0D0-610F47A7061E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96E27B6-95FE-404D-B0D0-610F47A7061E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96E27B6-95FE-404D-B0D0-610F47A7061E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96E27B6-95FE-404D-B0D0-610F47A7061E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7547454A-0380-4F59-A288-C345FAFA042B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7547454A-0380-4F59-A288-C345FAFA042B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7547454A-0380-4F59-A288-C345FAFA042B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7547454A-0380-4F59-A288-C345FAFA042B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357D5F55-267F-4EAA-94A7-0AFEC69569D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357D5F55-267F-4EAA-94A7-0AFEC69569D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357D5F55-267F-4EAA-94A7-0AFEC69569D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357D5F55-267F-4EAA-94A7-0AFEC69569D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAC5E4C1-E189-4882-951F-E7B1120AA18B}
+	EndGlobalSection
+EndGlobal
