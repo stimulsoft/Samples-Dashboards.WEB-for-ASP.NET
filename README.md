@@ -1,6 +1,6 @@
 # ASP.NET WebForms C# samples for Stimulsoft Dashboards.WEB
 
-#### This repository contains the source code of the examples of usage Stimulsoft Reports.WEB product in the ASP.NET WebForms applications, using C# code and HTML5 components.
+#### This repository contains the source code of the examples of usage Stimulsoft Dashboards.WEB product in the ASP.NET WebForms applications, using C# code and HTML5 components.
 
 # Overview
 This repository has some examples (Visual Studio Projects) each in different folders:
