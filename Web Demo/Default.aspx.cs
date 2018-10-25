@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using Stimulsoft.Report;
 
 namespace Web_Demo
@@ -20,11 +16,10 @@ namespace Web_Demo
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var listBox = (ListBox)Master.FindControl("ListBoxDashboards");
-            var filePath = listBox.SelectedValue;
+            var fileName = Page.Request.QueryString.Get("id") ?? "DashboardChristmas";
 
             var report = new StiReport();
-            report.Load(filePath);
+            report.Load(Server.MapPath($"~/Dashboards/{fileName}.mrt"));
             StiWebViewer1.Report = report;
         }
     }

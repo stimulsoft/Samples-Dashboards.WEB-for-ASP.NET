@@ -1,10 +1,10 @@
 {
   "ReportVersion": "2018.3.1.0",
-  "ReportGuid": "dc8daa875da04a9aac5d3cc8c889a3fd",
+  "ReportGuid": "d1e47ef33bc049899511700803db767f",
   "ReportName": "DashboardMetrics",
   "ReportAlias": "DashboardMetrics",
   "ReportCreated": "/Date(1531223785358+0300)/",
-  "ReportChanged": "/Date(1537795020330+0300)/",
+  "ReportChanged": "/Date(1539004427124+0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Inches",
@@ -87,14 +87,13 @@
       "Ident": "StiDashboard",
       "Name": "Dashboard1",
       "Guid": "8160e76fc0c84f18a7c3e35f6413334d",
-      "Border": ";;2;;;;;solid:Black",
-      "Brush": "empty",
+      "Brush": "solid:",
       "Components": {
         "0": {
           "Ident": "StiTextElement",
           "Name": "Text1",
           "Guid": "3d9d8a197d634129b476daf72f5feab5",
-          "ClientRectangle": "0,0,680,60",
+          "ClientRectangle": "0,0,1200,40",
           "Margin": {
             "Left": 0.0,
             "Top": 0.0,
@@ -107,44 +106,21 @@
             "Right": 0.0,
             "Bottom": 0.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "solid:51,71,91",
-          "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Left\"><font-color=\"White\">Metrics</font-color></text-align></font>"
+          "Border": ";;;;",
+          "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Center\">Metrics</text-align></font>"
         },
         "1": {
-          "Ident": "StiTextElement",
-          "Name": "Text2",
-          "Guid": "9a7f9d8985714555abaa4fec7a46b034",
-          "ClientRectangle": "680,0,320,60",
-          "Margin": {
-            "Left": 0.0,
-            "Top": 0.0,
-            "Right": 0.0,
-            "Bottom": 0.0
-          },
-          "Padding": {
-            "Left": 0.0,
-            "Top": 0.0,
-            "Right": 5.0,
-            "Bottom": 0.0
-          },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "solid:51,71,91",
-          "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Right\"><font-color=\"White\">Stimulsoft</font-color></text-align></font>"
-        },
-        "2": {
           "Ident": "StiChartElement",
           "Name": "Chart1",
           "Guid": "7e6c524688684fab924d2f20e7565718",
-          "ClientRectangle": "0,100,680,420",
+          "ClientRectangle": "0,80,480,360",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Values": {
             "0": {
               "Ident": "ValueChartMeter",
@@ -174,26 +150,22 @@
           },
           "Title": {
             "Text": "Chart",
-            "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           }
         },
-        "3": {
+        "2": {
           "Ident": "StiGaugeElement",
           "Name": "Gauge1",
           "Guid": "251e22c2fb7f4cfbbadbf249e3cd5fd1",
-          "ClientRectangle": "680,100,320,420",
+          "ClientRectangle": "960,440,240,160",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Type": "Linear",
           "Value": {
             "Ident": "ValueGaugeMeter",
@@ -204,25 +176,22 @@
             "Text": "Total Tasks",
             "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           },
           "Font": ";13;;"
         },
-        "4": {
+        "3": {
           "Ident": "StiProgressElement",
           "Name": "Progress3",
           "Guid": "d8564b9c2bec42fcb888fa7b5c06026c",
-          "ClientRectangle": "680,520,320,160",
+          "ClientRectangle": "0,440,320,160",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Value": {
             "Ident": "ValueProgressMeter",
             "Expression": "Sum(Tasks.Completed)",
@@ -237,25 +206,22 @@
             "Text": "Completed Task",
             "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           },
           "Font": ";13;;"
         },
-        "5": {
+        "4": {
           "Ident": "StiProgressElement",
           "Name": "Progress2",
           "Guid": "c9725b0db3f74c55b7ccc99c99c87c0d",
-          "ClientRectangle": "340,520,340,160",
+          "ClientRectangle": "640,440,320,160",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Value": {
             "Ident": "ValueProgressMeter",
             "Expression": "Sum(Tasks.Tasksinprogress)",
@@ -270,25 +236,22 @@
             "Text": "Tasks in Progress",
             "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           },
           "Font": ";13;;"
         },
-        "6": {
+        "5": {
           "Ident": "StiProgressElement",
           "Name": "Progress4",
           "Guid": "c68dbe0cb514423584712e28738819e5",
-          "ClientRectangle": "0,520,340,160",
+          "ClientRectangle": "320,440,320,160",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Value": {
             "Ident": "ValueProgressMeter",
             "Expression": "Sum(Tasks.NotStartedTasks)",
@@ -303,25 +266,46 @@
             "Text": "Not Started Tasks",
             "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           },
           "Font": ";13;;"
         },
-        "7": {
-          "Ident": "StiChartElement",
-          "Name": "Chart2",
-          "Guid": "36c245adc5d04f8f968ae59dca1d44f8",
-          "ClientRectangle": "0,680,1000,320",
+        "6": {
+          "Ident": "StiComboBoxElement",
+          "Name": "ComboBox1",
+          "Guid": "5861700de0f441b988d0e2a0d8d1de0a",
+          "ClientRectangle": "0,40,1200,40",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
+          "SelectionMode": "Multi",
+          "NameMeter": {
+            "Ident": "NameComboBoxMeter",
+            "Expression": "Tasks.Category",
+            "Label": "Category"
+          },
+          "KeyMeter": {
+            "Ident": "KeyComboBoxMeter",
+            "Expression": "Tasks.Category",
+            "Label": "Category"
+          }
+        },
+        "7": {
+          "Ident": "StiChartElement",
+          "Name": "Chart2",
+          "Guid": "36c245adc5d04f8f968ae59dca1d44f8",
+          "ClientRectangle": "480,80,720,360",
+          "Padding": {
+            "Left": 5.0,
+            "Top": 5.0,
+            "Right": 5.0,
+            "Bottom": 5.0
+          },
+          "Border": ";;;;",
           "Values": {
             "0": {
               "Ident": "ValueChartMeter",
@@ -351,40 +335,12 @@
           },
           "Title": {
             "Text": "Chart",
-            "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           }
-        },
-        "8": {
-          "Ident": "StiComboBoxElement",
-          "Name": "ComboBox1",
-          "Guid": "5861700de0f441b988d0e2a0d8d1de0a",
-          "ClientRectangle": "0,60,1000,40",
-          "Padding": {
-            "Left": 5.0,
-            "Top": 5.0,
-            "Right": 5.0,
-            "Bottom": 5.0
-          },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
-          "ShowSelectAll": true,
-          "SelectionMode": "Multi",
-          "NameMeter": {
-            "Ident": "NameComboBoxMeter",
-            "Expression": "Tasks.Category",
-            "Label": "Category"
-          },
-          "KeyMeter": {
-            "Ident": "KeyComboBoxMeter",
-            "Expression": "Tasks.Category",
-            "Label": "Category"
-          }
         }
-      }
+      },
+      "Border": ";;2;;;;;solid:Black"
     }
   }
 }

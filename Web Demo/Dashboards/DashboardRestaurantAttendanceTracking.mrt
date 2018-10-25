@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StiSerializer version="1.02" type="Net" application="StiReport">
-  <CalculationMode>Interpretation</CalculationMode>
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
     <Databases isList="true" count="1">
@@ -116,12 +115,13 @@
   <MetaTags isList="true" count="0" />
   <Pages isList="true" count="1">
     <Dashboard1 Ref="8" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
-      <Brush>EmptyBrush</Brush>
-      <Components isList="true" count="16">
+      <Alias>Restaurant Attendance Tracking</Alias>
+      <BackColor>Transparent</BackColor>
+      <Components isList="true" count="15">
         <RegionMap1 Ref="9" type="Stimulsoft.Dashboard.Components.RegionMap.StiRegionMapElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,80,700,660</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,40,600,340</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <DataFrom>DataColumns</DataFrom>
           <Guid>98e866116bc74cca8ec83c5d2d0fdfd3</Guid>
           <KeyMeter Ref="10" type="Stimulsoft.Dashboard.Components.RegionMap.StiKeyMapMeter" isKey="true">
@@ -140,11 +140,11 @@
           <Parent isRef="8" />
           <ShowName>Short</ShowName>
           <Title Ref="12" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Bold,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Population by State</Text>
-            <TextBrush>[47:90:157]</TextBrush>
             <Visible>False</Visible>
           </Title>
           <TransformActions isList="true" count="0" />
@@ -155,337 +155,48 @@
             <Key>b12625b40a654e7abae50607d6889a07</Key>
           </ValueMeter>
         </RegionMap1>
-        <Gauge1 Ref="14" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <CalculationMode>Custom</CalculationMode>
-          <ClientRectangle>700,280,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
+        <Text2 Ref="14" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>720,40,240,40</ClientRectangle>
           <ForeColor>Transparent</ForeColor>
-          <Guid>78d417edff0346a78cf67de358300046</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>200000</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge1</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="15" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>a24015c805b9484e8b9d0764314520c9</Key>
-          </Series>
-          <Title Ref="16" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>McDonald's</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="17" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum(RestaurantbyState.McDonald_s_One_Restaurant_per_Population)</Expression>
-            <Key>5b9217ee700b4a2f9fc49a004f2a3fff</Key>
-          </Value>
-        </Gauge1>
-        <Gauge2 Ref="18" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <CalculationMode>Custom</CalculationMode>
-          <ClientRectangle>800,280,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>fb18948b3f0c49378ca63eb7fa9a29c0</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>200000</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge2</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="19" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>a24015c805b9484e8b9d0764314520c9</Key>
-          </Series>
-          <Title Ref="20" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Wendy's</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="21" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([RestaurantbyState.Wendy's One Restaurant per Population])</Expression>
-            <Key>4c79214a33c94a6eb0f109f83743dac2</Key>
-          </Value>
-        </Gauge2>
-        <Gauge5 Ref="22" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <CalculationMode>Custom</CalculationMode>
-          <ClientRectangle>900,280,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>8803ba6d874d4663ac6942b73ace900f</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>200000</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge5</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="23" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>a24015c805b9484e8b9d0764314520c9</Key>
-          </Series>
-          <Title Ref="24" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Burger King</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="25" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([RestaurantbyState.Burger King  One Restaurant per Population])</Expression>
-            <Key>e91c59a024064be69cb337a9ae02e641</Key>
-          </Value>
-        </Gauge5>
-        <Gauge3 Ref="26" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <CalculationMode>Custom</CalculationMode>
-          <ClientRectangle>700,120,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>c5adc6217a554fc88674ce44aaecac9b</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>2000</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge3</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="27" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>a24015c805b9484e8b9d0764314520c9</Key>
-          </Series>
-          <Title Ref="28" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>McDonald's</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="29" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([RestaurantbyState.McDonald's])</Expression>
-            <Key>ef759546991a4a4496b0b4c24088cf45</Key>
-          </Value>
-        </Gauge3>
-        <Gauge4 Ref="30" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <CalculationMode>Custom</CalculationMode>
-          <ClientRectangle>800,120,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>febaf05baf3440189db6c5d026d1cb00</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>2000</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge4</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="31" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>a24015c805b9484e8b9d0764314520c9</Key>
-          </Series>
-          <Title Ref="32" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Wendy's</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="33" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([RestaurantbyState.Wendy's (with Franchise)])</Expression>
-            <Key>69256c9bcb63430fbf0e5dc8a354148d</Key>
-          </Value>
-        </Gauge4>
-        <Gauge6 Ref="34" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <CalculationMode>Custom</CalculationMode>
-          <ClientRectangle>900,120,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>7e8067fdfdc74fd0b41043d06d1df06a</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>2000</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge6</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="35" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>a24015c805b9484e8b9d0764314520c9</Key>
-          </Series>
-          <Title Ref="36" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Burger King</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="37" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([RestaurantbyState.Burger King])</Expression>
-            <Key>92447a0606d840de88c7b8a0240640f5</Key>
-          </Value>
-        </Gauge6>
-        <Gauge8 Ref="38" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>800,440,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>64d0f3123a864dbca66ce9772e0397ad</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>10000000</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge8</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="39" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>a24015c805b9484e8b9d0764314520c9</Key>
-          </Series>
-          <Title Ref="40" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Wendy's</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="41" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([RestaurantbyState. Sales Volume Wendy's])</Expression>
-            <Key>3acd47a358504b1a9eb98a5c16a00e40</Key>
-          </Value>
-        </Gauge8>
-        <Gauge9 Ref="42" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>900,440,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>e69c3314f4c745459cbe46b88b351948</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>10000000</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge9</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="43" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>a24015c805b9484e8b9d0764314520c9</Key>
-          </Series>
-          <Title Ref="44" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Burger King</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="45" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([RestaurantbyState. Sales Volume Burger King])</Expression>
-            <Key>41632e49f697448cae4e907c385cfb43</Key>
-          </Value>
-        </Gauge9>
-        <Text1 Ref="46" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>700,240,300,40</ClientRectangle>
-          <Guid>b3ed46707ca24f21942a00b37891fe7c</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Name>Text1</Name>
-          <Padding>0,0,0,0</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Text>&lt;font face="Segoe UI" size="22"&gt;&lt;text-align="Center"&gt;Attendance at Restaurants&lt;/text-align&gt;&lt;/font&gt;</Text>
-          <Title Ref="47" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <Text>Text</Text>
-            <TextBrush>[237:128:55]</TextBrush>
-            <Visible>False</Visible>
-          </Title>
-        </Text1>
-        <Text2 Ref="48" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>700,80,300,40</ClientRectangle>
           <Guid>13ab0026de36467593891458e9e7e8ce</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>Text2</Name>
           <Padding>0,0,0,0</Padding>
           <Page isRef="8" />
           <Parent isRef="8" />
-          <Text>&lt;font face="Segoe UI" size="22"&gt;&lt;text-align="Center"&gt;Restaurants by State&lt;/text-align&gt;&lt;/font&gt;</Text>
-          <Title Ref="49" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Text>&lt;font face="Segoe UI" size="16"&gt;&lt;text-align="Center"&gt;Restaurants by State&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="15" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Text</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
         </Text2>
-        <Text3 Ref="50" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>700,400,300,40</ClientRectangle>
+        <Text3 Ref="16" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>960,40,240,40</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
           <Guid>4c846c756e46461a9f95e17097887786</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>Text3</Name>
           <Padding>0,0,0,0</Padding>
           <Page isRef="8" />
           <Parent isRef="8" />
-          <Text>&lt;font face="Segoe UI" size="22"&gt;&lt;text-align="Center"&gt;Sales Volume&lt;/text-align&gt;&lt;/font&gt;</Text>
-          <Title Ref="51" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Text>&lt;font face="Segoe UI" size="16"&gt;&lt;text-align="Center"&gt;Sales Volume&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="17" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Text</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
         </Text3>
-        <Text4 Ref="52" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,0,1000,80</ClientRectangle>
+        <Text4 Ref="18" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
           <Guid>69ffd9e55fc2445684e2e777981dc65b</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>Text4</Name>
@@ -493,60 +204,25 @@
           <Page isRef="8" />
           <Parent isRef="8" />
           <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;Restaurant Attendance Tracking&lt;/text-align&gt;&lt;/font&gt;</Text>
-          <Title Ref="53" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Title Ref="19" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Text</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
         </Text4>
-        <Gauge7 Ref="54" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>700,440,100,120</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>4367d908fa994cea9c8a0c7db3176b0c</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge7</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="8" />
-          <Parent isRef="8" />
-          <Series Ref="55" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
-            <Expression>RestaurantbyState.State</Expression>
-            <Key>08741581671543059596d58e023b3351</Key>
-            <Label>State</Label>
-          </Series>
-          <Title Ref="56" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>McDonald's</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="57" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([RestaurantbyState.SalesVolumeMcDonald's])</Expression>
-            <Key>8af35253655549508852854315f33486</Key>
-            <Label> Sales Volume McDonald's</Label>
-          </Value>
-        </Gauge7>
-        <PivotTable1 Ref="58" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotTableElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,740,1000,260</ClientRectangle>
+        <PivotTable1 Ref="20" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotTableElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,380,1200,220</ClientRectangle>
           <Columns isList="true" count="1">
-            <Item23 Ref="59" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotColumn" isKey="true">
+            <Item13 Ref="21" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotColumn" isKey="true">
               <Expression>RestaurantbyState.State</Expression>
               <Key>9f0784c3c693454f92044f0b986aeed7</Key>
               <Label>State</Label>
-            </Item23>
+            </Item13>
           </Columns>
+          <DataFilters isList="true" count="0" />
           <Guid>7fec48ee6d1f4ef89baf860bdb4b66b6</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>PivotTable1</Name>
@@ -554,85 +230,306 @@
           <Page isRef="8" />
           <Parent isRef="8" />
           <Rows isList="true" count="1">
-            <Item24 Ref="60" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotRow" isKey="true">
+            <Item14 Ref="22" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotRow" isKey="true">
               <Expression>TargetSales.ProductsName</Expression>
               <Key>fddd8df8a5684e4e9b18d6a06bd54b2f</Key>
-              <Label>ProductsName</Label>
-            </Item24>
+              <Label>Product Name</Label>
+            </Item14>
           </Rows>
           <Summaries isList="true" count="3">
-            <Item25 Ref="61" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotSummary" isKey="true">
+            <Item15 Ref="23" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotSummary" isKey="true">
               <Expression>Sum([RestaurantbyState.SalesVolumeMcDonald's])</Expression>
               <Key>19404ddabf9c4ec086a9459bb79e972e</Key>
               <Label> Sales Volume McDonald's</Label>
-            </Item25>
-            <Item26 Ref="62" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotSummary" isKey="true">
+            </Item15>
+            <Item16 Ref="24" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotSummary" isKey="true">
               <Expression>Sum([RestaurantbyState.SalesVolumeWendy's])</Expression>
               <Key>62d0765bf0f145228f927d5a952a1aeb</Key>
               <Label> Sales Volume Wendy's</Label>
-            </Item26>
-            <Item27 Ref="63" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotSummary" isKey="true">
+            </Item16>
+            <Item17 Ref="25" type="Stimulsoft.Dashboard.Components.PivotTable.StiPivotSummary" isKey="true">
               <Expression>Sum(RestaurantbyState.SalesVolumeBurgerKing)</Expression>
               <Key>d8d4d6f95fbb4d21b8226b8c0db72f84</Key>
               <Label> Sales Volume Burger King</Label>
-            </Item27>
+            </Item17>
           </Summaries>
-          <Title Ref="64" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Title Ref="26" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Pivot Table</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
           <TransformSorts isList="true" count="0" />
         </PivotTable1>
-        <Progress1 Ref="65" type="Stimulsoft.Dashboard.Components.Progress.StiProgressElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>700,560,300,180</ClientRectangle>
+        <Indicator1 Ref="27" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>720,80,240,100</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <Font>Arial,13</Font>
           <ForeColor>Transparent</ForeColor>
-          <Guid>6c33339746fb458bb5e66e51a989fd6a</Guid>
+          <Guid>50731fcd2b2649ad8efcac7c8bfccd46</Guid>
+          <Icon>Home</Icon>
           <Margin>3,3,3,3</Margin>
-          <Name>Progress1</Name>
+          <Name>Indicator1</Name>
           <Padding>5,5,5,5</Padding>
           <Page isRef="8" />
           <Parent isRef="8" />
-          <Series Ref="66" type="Stimulsoft.Dashboard.Components.Progress.StiSeriesProgressMeter" isKey="true">
-            <Expression>TargetSales.CategoryName</Expression>
-            <Key>f231f26afe574cc098b8162a338df266</Key>
-            <Label>CategoryName</Label>
-          </Series>
-          <Target Ref="67" type="Stimulsoft.Dashboard.Components.Progress.StiTargetProgressMeter" isKey="true">
-            <Expression>Sum(TargetSales.Target)</Expression>
-            <Key>8a38bb96f88e46b094e8887a489f0966</Key>
-            <Label>Target</Label>
-          </Target>
-          <Title Ref="68" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Title Ref="28" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
-            <Text>Progress</Text>
-            <TextBrush>EmptyBrush</TextBrush>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Indicator</Text>
             <Visible>False</Visible>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
           <TransformSorts isList="true" count="0" />
-          <Value Ref="69" type="Stimulsoft.Dashboard.Components.Progress.StiValueProgressMeter" isKey="true">
-            <Expression>Sum(TargetSales.Sales)</Expression>
-            <Key>024c4ebe2fdd4a28a53651e65bd36129</Key>
-            <Label>Sales</Label>
+          <Value Ref="29" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum([RestaurantbyState.McDonald's])</Expression>
+            <Key>9e2355c551fd4a6da469726ca4eb6c6c</Key>
+            <Label>McDonald's</Label>
           </Value>
-        </Progress1>
+        </Indicator1>
+        <Indicator2 Ref="30" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>720,180,240,100</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>36b421377f7a4c2282546e4a183d6c1a</Guid>
+          <Icon>Home</Icon>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator2</Name>
+          <Padding>5,5,5,5</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Title Ref="31" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Indicator</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <Value Ref="32" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum([RestaurantbyState.Wendy's(withFranchise)])</Expression>
+            <Key>33a0def582054609a36840e056f9150c</Key>
+            <Label>Wendy's (with Franchise)</Label>
+          </Value>
+        </Indicator2>
+        <Indicator3 Ref="33" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>720,280,240,100</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>968930af91c04ab189662c7213f13cc3</Guid>
+          <Icon>Home</Icon>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator3</Name>
+          <Padding>5,5,5,5</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Title Ref="34" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Indicator</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <Value Ref="35" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(RestaurantbyState.BurgerKing)</Expression>
+            <Key>8ea4e222227748fb817aa05575b8b0b4</Key>
+            <Label>Burger King</Label>
+          </Value>
+        </Indicator3>
+        <Gauge2 Ref="36" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>960,180,240,100</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>004b68e950564482aab2ce8caa0bcc77</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Maximum>100</Maximum>
+          <Minimum>0</Minimum>
+          <Name>Gauge2</Name>
+          <Padding>5,5,5,5</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Ranges isList="true" count="0" />
+          <Title Ref="37" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Gauge</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <Value Ref="38" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+            <Expression>Sum([RestaurantbyState.SalesVolumeWendy's])</Expression>
+            <Key>ff819efe40ec414e943aa45539418462</Key>
+            <Label> Sales Volume Wendy's</Label>
+          </Value>
+        </Gauge2>
+        <Gauge3 Ref="39" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>960,280,240,100</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>69dc19ec71f24980b2cdf77f1c72155a</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Maximum>100</Maximum>
+          <Minimum>0</Minimum>
+          <Name>Gauge3</Name>
+          <Padding>5,5,5,5</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Ranges isList="true" count="0" />
+          <Title Ref="40" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Gauge</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <Value Ref="41" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+            <Expression>Sum(RestaurantbyState.SalesVolumeBurgerKing)</Expression>
+            <Key>336818efe023464da2ce9e8ce736ed1b</Key>
+            <Label> Sales Volume Burger King</Label>
+          </Value>
+        </Gauge3>
+        <Gauge1 Ref="42" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>960,80,240,100</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>97381273763e48dcb6262657a1e35bd2</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Maximum>100</Maximum>
+          <Minimum>0</Minimum>
+          <Name>Gauge1</Name>
+          <Padding>5,5,5,5</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Ranges isList="true" count="0" />
+          <Title Ref="43" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Gauge</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <Value Ref="44" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+            <Expression>Sum([RestaurantbyState.SalesVolumeMcDonald's])</Expression>
+            <Key>4a47130b768c4b47be7b8acf6c8c999f</Key>
+            <Label> Sales Volume McDonald's</Label>
+          </Value>
+        </Gauge1>
+        <Text1 Ref="45" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,80,120,100</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>008e7fc8ac6d4ea19fec593b6c2d0e5f</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text1</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Center"&gt;McDonald's&lt;br /&gt;
+&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="46" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text1>
+        <Text5 Ref="47" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,180,120,100</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>aa7cd2ea18ac4491aeb220a404c06f93</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text5</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Center"&gt;Wendy's&lt;br /&gt;
+&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="48" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text5>
+        <Text6 Ref="49" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,280,120,100</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>0828d51525764d52b1837b5a1d5f318f</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text6</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Text>&lt;font face="Segoe UI" size="12"&gt;&lt;text-align="Center"&gt;Burger King&lt;br /&gt;
+&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="50" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text6>
+        <Text7 Ref="51" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,40,120,40</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>b183c832e85346608f998f5c1bf08529</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text7</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="8" />
+          <Parent isRef="8" />
+          <Text>&lt;font face="Segoe UI" size="16"&gt;&lt;text-align="Center"&gt;Company&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="52" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text7>
       </Components>
       <Guid>b09d1256707743d6b407996669dd574f</Guid>
       <Name>Dashboard1</Name>
       <Report isRef="0" />
     </Dashboard1>
   </Pages>
-  <PrinterSettings Ref="70" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="53" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -644,9 +541,11 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>DashboardRestaurantAttendanceTracking</ReportAlias>
-  <ReportChanged>9/24/2018 4:18:53 PM</ReportChanged>
+  <ReportAuthor>Stimulsoft</ReportAuthor>
+  <ReportChanged>10/8/2018 5:06:41 PM</ReportChanged>
   <ReportCreated>9/4/2018 2:59:13 PM</ReportCreated>
-  <ReportGuid>1d1256e97c5b4de6b2deef5cacf08189</ReportGuid>
+  <ReportFile>D:\Reports\Dashboards\TemplatesforWeb\DashboardRestaurantAttendanceTracking.mrt</ReportFile>
+  <ReportGuid>ec05bd3565ce4c3ab08dc6af63892d8b</ReportGuid>
   <ReportName>DashboardRestaurantAttendanceTracking</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2018.3.1.0</ReportVersion>

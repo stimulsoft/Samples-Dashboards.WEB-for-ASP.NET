@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StiSerializer version="1.02" type="Net" application="StiReport">
-  <CalculationMode>Interpretation</CalculationMode>
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
     <Databases isList="true" count="1">
@@ -77,7 +76,8 @@
   <MetaTags isList="true" count="0" />
   <Pages isList="true" count="2">
     <Dashboard1 Ref="7" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
-      <Brush>EmptyBrush</Brush>
+      <Alias>Sales Statistics</Alias>
+      <BackColor>Transparent</BackColor>
       <Components isList="true" count="5">
         <Chart1 Ref="8" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
           <Arguments isList="true" count="1">
@@ -86,10 +86,10 @@
               <Key>68153d517fe54e1da4b8467f2dea2f17</Key>
             </Item8>
           </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,80,500,460</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,40,600,280</ClientRectangle>
           <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
           <EndValues isList="true" count="0" />
           <Guid>3f61b2b3421b4e9db6ca3782bbaa458b</Guid>
           <HighValues isList="true" count="0" />
@@ -100,11 +100,11 @@
           <Page isRef="7" />
           <Parent isRef="7" />
           <Title Ref="10" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Average Check</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -129,10 +129,10 @@
               <Key>7f6cdbf093a34ba6a1ef02253a77184a</Key>
             </Item12>
           </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,540,500,460</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,320,600,280</ClientRectangle>
           <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
           <EndValues isList="true" count="0" />
           <Guid>002e5d08e30540a385800c96032f5853</Guid>
           <HighValues isList="true" count="0" />
@@ -143,11 +143,11 @@
           <Page isRef="7" />
           <Parent isRef="7" />
           <Title Ref="15" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Number of Requests by Category</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -167,10 +167,10 @@
               <Key>99f6136e72b749e3a34285f1a1fc7e26</Key>
             </Item15>
           </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>500,540,500,460</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,320,600,280</ClientRectangle>
           <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
           <EndValues isList="true" count="0" />
           <Guid>1da90577f43746cbb50671bdcce3033e</Guid>
           <HighValues isList="true" count="0" />
@@ -181,11 +181,11 @@
           <Page isRef="7" />
           <Parent isRef="7" />
           <Title Ref="19" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>My Sales by Category</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -235,9 +235,9 @@
           <Weights isList="true" count="0" />
         </Chart3>
         <Indicator1 Ref="28" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>500,80,500,460</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,40,600,280</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <Font>Arial,13</Font>
           <ForeColor>Transparent</ForeColor>
           <Guid>109733f6903b400293c8569fcec9fcdd</Guid>
@@ -256,11 +256,11 @@
             <Key>dbb91ce429f34c03b248a7f5b29a6889</Key>
           </Target>
           <Title Ref="31" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Statistics</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -271,21 +271,21 @@
           </Value>
         </Indicator1>
         <Text1 Ref="33" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,0,1000,80</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
           <Guid>2b8e14cce978450bb3d12fcc0ef6e385</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>Text1</Name>
           <Padding>0,0,0,0</Padding>
           <Page isRef="7" />
           <Parent isRef="7" />
-          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;&lt;font-color="#DDDDDD"&gt;Sales Statistics&lt;/font-color&gt;&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;Sales Statistics&lt;/text-align&gt;&lt;/font&gt;</Text>
           <Title Ref="34" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Text</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
         </Text1>
@@ -296,7 +296,8 @@
       <Style>SlateGray</Style>
     </Dashboard1>
     <Dashboard2 Ref="35" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
-      <Brush>EmptyBrush</Brush>
+      <Alias>Sales Statistics with Progress</Alias>
+      <BackColor>Transparent</BackColor>
       <Components isList="true" count="5">
         <Chart4 Ref="36" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
           <Arguments isList="true" count="1">
@@ -305,10 +306,10 @@
               <Key>68153d517fe54e1da4b8467f2dea2f17</Key>
             </Item28>
           </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,80,500,460</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,40,600,280</ClientRectangle>
           <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
           <EndValues isList="true" count="0" />
           <Guid>3f61b2b3421b4e9db6ca3782bbaa458b</Guid>
           <HighValues isList="true" count="0" />
@@ -319,11 +320,11 @@
           <Page isRef="35" />
           <Parent isRef="35" />
           <Title Ref="38" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Average Check</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -348,10 +349,10 @@
               <Key>7f6cdbf093a34ba6a1ef02253a77184a</Key>
             </Item32>
           </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,540,500,460</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,320,600,280</ClientRectangle>
           <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
           <EndValues isList="true" count="0" />
           <Guid>002e5d08e30540a385800c96032f5853</Guid>
           <HighValues isList="true" count="0" />
@@ -362,11 +363,11 @@
           <Page isRef="35" />
           <Parent isRef="35" />
           <Title Ref="43" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Number of Requests by Category</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -386,10 +387,10 @@
               <Key>99f6136e72b749e3a34285f1a1fc7e26</Key>
             </Item35>
           </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>500,540,500,460</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,320,600,280</ClientRectangle>
           <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
           <EndValues isList="true" count="0" />
           <Guid>1da90577f43746cbb50671bdcce3033e</Guid>
           <HighValues isList="true" count="0" />
@@ -400,11 +401,11 @@
           <Page isRef="35" />
           <Parent isRef="35" />
           <Title Ref="47" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>My Sales by Category</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -454,28 +455,28 @@
           <Weights isList="true" count="0" />
         </Chart6>
         <Text2 Ref="56" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,0,1000,80</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
           <Guid>2b8e14cce978450bb3d12fcc0ef6e385</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>Text2</Name>
           <Padding>0,0,0,0</Padding>
           <Page isRef="35" />
           <Parent isRef="35" />
-          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;&lt;font-color="#DDDDDD"&gt;Sales Statistics&lt;/font-color&gt;&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;Sales Statistics&lt;/text-align&gt;&lt;/font&gt;</Text>
           <Title Ref="57" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Text</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
         </Text2>
         <Progress1 Ref="58" type="Stimulsoft.Dashboard.Components.Progress.StiProgressElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>500,80,500,460</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,40,600,280</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <Font>Arial,13,Bold</Font>
           <ForeColor>Transparent</ForeColor>
           <Guid>35bbf5f9fdc1473abc1f18663d5c3ea0</Guid>
@@ -496,11 +497,11 @@
             <Label>Target</Label>
           </Target>
           <Title Ref="61" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Statistics</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -530,9 +531,11 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>DashboardSalesStatistics</ReportAlias>
-  <ReportChanged>9/26/2018 10:35:26 AM</ReportChanged>
+  <ReportAuthor>Stimulsoft</ReportAuthor>
+  <ReportChanged>10/8/2018 5:08:24 PM</ReportChanged>
   <ReportCreated>6/17/2018 4:30:06 PM</ReportCreated>
-  <ReportGuid>04bf54a9d8bb4583a83654952e920b3b</ReportGuid>
+  <ReportFile>D:\Reports\Dashboards\TemplatesforWeb\DashboardSalesStatistics.mrt</ReportFile>
+  <ReportGuid>84cf564ff6f14ef7b88318a40141dd5b</ReportGuid>
   <ReportName>DashboardSalesStatistics</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2018.3.1.0</ReportVersion>

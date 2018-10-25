@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StiSerializer version="1.02" type="Net" application="StiReport">
-  <CalculationMode>Interpretation</CalculationMode>
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
     <Databases isList="true" count="1">
@@ -160,20 +159,21 @@
   <MetaTags isList="true" count="0" />
   <Pages isList="true" count="1">
     <Dashboard1 Ref="11" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
-      <Brush>EmptyBrush</Brush>
+      <Alias>Sales Overview</Alias>
+      <BackColor>Transparent</BackColor>
       <Components isList="true" count="5">
         <Chart1 Ref="12" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
           <Arguments isList="true" count="1">
             <Item12 Ref="13" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
               <Expression>TargetSales.ProductsName</Expression>
               <Key>3282977241bc4a838fecf82ce30c5442</Key>
-              <Label>ProductsName</Label>
+              <Label>Product Name</Label>
             </Item12>
           </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,580,1000,420</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,340,1200,260</ClientRectangle>
           <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
           <EndValues isList="true" count="0" />
           <Guid>4fe2306df6474ddfb129d012467ea054</Guid>
           <HighValues isList="true" count="0" />
@@ -184,11 +184,11 @@
           <Page isRef="11" />
           <Parent isRef="11" />
           <Title Ref="14" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Product Sales</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -202,33 +202,32 @@
           <Weights isList="true" count="0" />
         </Chart1>
         <Text1 Ref="16" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,0,1000,80</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
           <Guid>84e2272b0d504119acfba327e8f3fa10</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>Text1</Name>
           <Padding>0,0,0,0</Padding>
           <Page isRef="11" />
           <Parent isRef="11" />
-          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;&lt;font-color="#DDDDDD"&gt;Sales Overview&lt;/font-color&gt;&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;Sales Overview&lt;/text-align&gt;&lt;/font&gt;</Text>
           <Title Ref="17" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Text</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
         </Text1>
         <Progress1 Ref="18" type="Stimulsoft.Dashboard.Components.Progress.StiProgressElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,320,400,260</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,240,540,100</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <Font>Arial,13,Bold</Font>
           <ForeColor>Transparent</ForeColor>
           <Guid>7c0795fa754548a6aa810bc6a9d6ac25</Guid>
           <Margin>3,3,3,3</Margin>
-          <Mode>DataBars</Mode>
           <Name>Progress1</Name>
           <Padding>5,5,5,5</Padding>
           <Page isRef="11" />
@@ -236,16 +235,17 @@
           <Series Ref="19" type="Stimulsoft.Dashboard.Components.Progress.StiSeriesProgressMeter" isKey="true">
             <Expression>TargetSales.CategoryName</Expression>
             <Key>48d9f6fe1cb7434a9ba51986f97a4318</Key>
+            <Label>Category Name</Label>
           </Series>
           <Target Ref="20" type="Stimulsoft.Dashboard.Components.Progress.StiTargetProgressMeter" isKey="true">
             <Expression>Sum(TargetSales.Target)</Expression>
             <Key>41dec5a3c4704b94956b4474dffae1ad</Key>
           </Target>
           <Title Ref="21" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Progress</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
           <TransformActions isList="true" count="0" />
@@ -257,13 +257,13 @@
           </Value>
         </Progress1>
         <Table2 Ref="23" type="Stimulsoft.Dashboard.Components.Table.StiTableElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,80,400,240</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,40,540,200</ClientRectangle>
           <Columns isList="true" count="4">
             <Item17 Ref="24" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
               <Expression>TargetSales.ProductsName</Expression>
               <Key>5fa5b877b4c84665bc285c61bd2e4785</Key>
+              <Label>Product Name</Label>
             </Item17>
             <Item18 Ref="25" type="Stimulsoft.Dashboard.Components.Table.StiIndicatorColumn" isKey="true">
               <Expression>Sum(TargetSales.Target)</Expression>
@@ -288,8 +288,10 @@
             <Item20 Ref="29" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
               <Expression>TargetSales.CategoryName</Expression>
               <Key>fd7b3820ed9244429053e7311681d29c</Key>
+              <Label>Category Name</Label>
             </Item20>
           </Columns>
+          <DataFilters isList="true" count="0" />
           <Guid>71a37ba6f1724955adbc77ccf243698d</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>Table2</Name>
@@ -297,11 +299,11 @@
           <Page isRef="11" />
           <Parent isRef="11" />
           <Title Ref="30" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>List of Products</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -310,33 +312,33 @@
           <UserSorts isList="true" count="0" />
         </Table2>
         <RegionMap1 Ref="31" type="Stimulsoft.Dashboard.Components.RegionMap.StiRegionMapElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>400,80,600,500</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>540,40,660,300</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <DataFrom>DataColumns</DataFrom>
           <Guid>8c3b00d3ba0948128dbd837d2581cbf3</Guid>
           <KeyMeter Ref="32" type="Stimulsoft.Dashboard.Components.RegionMap.StiKeyMapMeter" isKey="true">
             <Expression>TargetSales.StateName</Expression>
             <Key>8f515799c2584da9b78e6d9492a3ba59</Key>
-            <Label>StateName</Label>
+            <Label>State Name</Label>
           </KeyMeter>
           <Margin>3,3,3,3</Margin>
           <Name>RegionMap1</Name>
           <NameMeter Ref="33" type="Stimulsoft.Dashboard.Components.RegionMap.StiNameMapMeter" isKey="true">
             <Expression>TargetSales.StateName</Expression>
             <Key>6da327cd35204c6db0ea9f1cdd345e20</Key>
-            <Label>StateName</Label>
+            <Label>State Name</Label>
           </NameMeter>
           <Padding>5,5,5,5</Padding>
           <Page isRef="11" />
           <Parent isRef="11" />
           <ShowName>Short</ShowName>
           <Title Ref="34" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Select State to Show Sales Stats</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
@@ -361,9 +363,11 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>DashboardSalesOverview</ReportAlias>
-  <ReportChanged>9/26/2018 10:32:42 AM</ReportChanged>
+  <ReportAuthor>Stimulsoft</ReportAuthor>
+  <ReportChanged>10/8/2018 5:07:27 PM</ReportChanged>
   <ReportCreated>9/5/2018 8:19:11 AM</ReportCreated>
-  <ReportGuid>4e90730bb809427999ed03a8750991bf</ReportGuid>
+  <ReportFile>D:\Reports\Dashboards\TemplatesforWeb\DashboardSalesOverview.mrt</ReportFile>
+  <ReportGuid>d9785476ae2642bcadb9f46d533a0f23</ReportGuid>
   <ReportName>DashboardSalesOverview</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2018.3.1.0</ReportVersion>

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StiSerializer version="1.02" type="Net" application="StiReport">
-  <CalculationMode>Interpretation</CalculationMode>
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
     <Databases isList="true" count="1">
@@ -81,96 +80,16 @@
   <MetaTags isList="true" count="0" />
   <Pages isList="true" count="1">
     <Dashboard1 Ref="6" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
-      <Brush>EmptyBrush</Brush>
-      <Components isList="true" count="8">
-        <TableProducts Ref="7" type="Stimulsoft.Dashboard.Components.Table.StiTableElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,520,460,480</ClientRectangle>
-          <Columns isList="true" count="10">
-            <Item7 Ref="8" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
-              <Expression>Products.ProductName</Expression>
-              <Key>5959bea6f85b4782babddf3b5c04afbe</Key>
-            </Item7>
-            <Item8 Ref="9" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
-              <Expression>Products.QuantityPerUnit</Expression>
-              <Key>2202d2c92b59484fb77cd6900ab9f080</Key>
-            </Item8>
-            <Item9 Ref="10" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
-              <Expression>Sum(Products.ReorderLevel)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>0074cbd2bfeb4a569ae6aeaee0bbe6e9</Key>
-              <TextFormat Ref="11" type="NumberFormat" isKey="true">
-                <DecimalDigits>0</DecimalDigits>
-                <GroupSeparator>,</GroupSeparator>
-                <NegativePattern>1</NegativePattern>
-                <UseLocalSetting>False</UseLocalSetting>
-              </TextFormat>
-            </Item9>
-            <Item10 Ref="12" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
-              <Expression>Sum(Products.UnitPrice)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>e554dfd022d14631983b75a060ee3cf8</Key>
-              <TextFormat Ref="13" type="CurrencyFormat" isKey="true">
-                <DecimalDigits>2</DecimalDigits>
-                <GroupSeparator>,</GroupSeparator>
-                <NegativePattern>0</NegativePattern>
-                <PositivePattern>0</PositivePattern>
-              </TextFormat>
-            </Item10>
-            <Item11 Ref="14" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
-              <Expression>Sum(Products.UnitsInStock)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>55bcbd085e0240009bd449c14778ffcb</Key>
-              <TextFormat isRef="11" />
-            </Item11>
-            <Item12 Ref="15" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
-              <Expression>Suppliers.CompanyName</Expression>
-              <Key>7e6b5e07c0ba44009bedfe7ee8ec3f00</Key>
-            </Item12>
-            <Item13 Ref="16" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
-              <Expression>Suppliers.ContactName</Expression>
-              <Key>1925aa965f404827a5a7072059f0514c</Key>
-            </Item13>
-            <Item14 Ref="17" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
-              <Expression>Suppliers.Phone</Expression>
-              <Key>753032d4b92c408c836571ea8060a214</Key>
-            </Item14>
-            <Item15 Ref="18" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
-              <Expression>Suppliers.Address</Expression>
-              <Key>0c5b6a5633fa4aa9937c8b72dbf60031</Key>
-            </Item15>
-            <Item16 Ref="19" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
-              <Expression>Suppliers.City</Expression>
-              <Key>04cea166a0184a2dacd4c56697f3a9dc</Key>
-            </Item16>
-          </Columns>
-          <Guid>731e112107f643e7ac10ccee5effa09d</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Name>TableProducts</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="6" />
-          <Parent isRef="6" />
-          <Title Ref="20" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>List of Products</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <UserFilters isList="true" count="0" />
-          <UserSorts isList="true" count="0" />
-        </TableProducts>
-        <RegionMap1 Ref="21" type="Stimulsoft.Dashboard.Components.RegionMap.StiRegionMapElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>460,80,540,440</ClientRectangle>
+      <Alias>Products</Alias>
+      <BackColor>Transparent</BackColor>
+      <Components isList="true" count="7">
+        <RegionMap1 Ref="7" type="Stimulsoft.Dashboard.Components.RegionMap.StiRegionMapElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>560,40,640,560</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <DataFrom>DataColumns</DataFrom>
           <Guid>eccce8c5975747bc8e002d51b735a963</Guid>
-          <KeyMeter Ref="22" type="Stimulsoft.Dashboard.Components.RegionMap.StiKeyMapMeter" isKey="true">
+          <KeyMeter Ref="8" type="Stimulsoft.Dashboard.Components.RegionMap.StiKeyMapMeter" isKey="true">
             <Expression>Suppliers.Country</Expression>
             <Key>cd019a7ddeb94adbacff048564d65c31</Key>
           </KeyMeter>
@@ -178,95 +97,52 @@
           <MapType>Heatmap</MapType>
           <Margin>3,3,3,3</Margin>
           <Name>RegionMap1</Name>
-          <NameMeter Ref="23" type="Stimulsoft.Dashboard.Components.RegionMap.StiNameMapMeter" isKey="true">
+          <NameMeter Ref="9" type="Stimulsoft.Dashboard.Components.RegionMap.StiNameMapMeter" isKey="true">
             <Expression>Suppliers.Country</Expression>
             <Key>c9a422ac04cc4abf8f7268a49a55590a</Key>
           </NameMeter>
           <Padding>5,5,5,5</Padding>
           <Page isRef="6" />
           <Parent isRef="6" />
-          <Title Ref="24" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Title Ref="10" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Units in Stock by Country</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
           <TransformSorts isList="true" count="0" />
-          <ValueMeter Ref="25" type="Stimulsoft.Dashboard.Components.RegionMap.StiValueMapMeter" isKey="true">
+          <ValueMeter Ref="11" type="Stimulsoft.Dashboard.Components.RegionMap.StiValueMapMeter" isKey="true">
             <Expression>Products.UnitsInStock</Expression>
             <Key>6ed253e8377f4a9cbf51374bedd597ad</Key>
+            <Label>Units In Stock</Label>
           </ValueMeter>
         </RegionMap1>
-        <Chart1 Ref="26" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
-          <Arguments isList="true" count="1">
-            <Item19 Ref="27" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
-              <Expression>Products.ProductName</Expression>
-              <Key>9b29016bfaf24133a4b9d5e259688e1a</Key>
-            </Item19>
-          </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>460,520,540,480</ClientRectangle>
-          <CloseValues isList="true" count="0" />
-          <EndValues isList="true" count="0" />
-          <Guid>ac17e3dbb59d4193a86fa5d93537ae2d</Guid>
-          <HighValues isList="true" count="0" />
-          <LowValues isList="true" count="0" />
-          <Margin>3,3,3,3</Margin>
-          <Name>Chart1</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="6" />
-          <Parent isRef="6" />
-          <Title Ref="28" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Units Ordered and Units in Stock</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Values isList="true" count="2">
-            <Item20 Ref="29" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
-              <Expression>Sum(Products.UnitsInStock)</Expression>
-              <Key>d5dd9e2073684c7ab1b4ab99a158c038</Key>
-              <SeriesType>StackedColumn</SeriesType>
-            </Item20>
-            <Item21 Ref="30" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
-              <Expression>Sum(Products.UnitsOnOrder)</Expression>
-              <Key>c87e03ad2e76452483c98c156c7134b3</Key>
-              <SeriesType>StackedColumn</SeriesType>
-            </Item21>
-          </Values>
-          <Weights isList="true" count="0" />
-        </Chart1>
-        <Text1 Ref="31" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,0,1000,80</ClientRectangle>
+        <Text1 Ref="12" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
           <Guid>630b2ded23934003ab856bedfcb868d9</Guid>
           <Margin>3,3,3,3</Margin>
           <Name>Text1</Name>
           <Padding>0,0,0,0</Padding>
           <Page isRef="6" />
           <Parent isRef="6" />
-          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;&lt;font-color="#DDDDDD"&gt;Products&lt;/font-color&gt;&lt;/text-align&gt;&lt;/font&gt;</Text>
-          <Title Ref="32" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;Products&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="13" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Text</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
         </Text1>
-        <Gauge1 Ref="33" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>220,300,240,220</ClientRectangle>
+        <Gauge1 Ref="14" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,360,280,240</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <Font>Arial,13</Font>
           <ForeColor>Transparent</ForeColor>
           <Guid>79df30c2430e45a89e15733fd2773a16</Guid>
@@ -277,26 +153,42 @@
           <Padding>5,5,5,5</Padding>
           <Page isRef="6" />
           <Parent isRef="6" />
-          <Title Ref="34" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Ranges isList="true" count="3">
+            <Item9 Ref="15" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>34, 177, 76</Color>
+              <End>33</End>
+            </Item9>
+            <Item10 Ref="16" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>Yellow</Color>
+              <End>66</End>
+              <Start>33</Start>
+            </Item10>
+            <Item11 Ref="17" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>237, 28, 36</Color>
+              <Start>66</Start>
+            </Item11>
+          </Ranges>
+          <Title Ref="18" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Units In Stock</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
           <TransformSorts isList="true" count="0" />
-          <Value Ref="35" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+          <Type>HalfCircular</Type>
+          <Value Ref="19" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
             <Expression>Sum(Products.UnitsInStock)</Expression>
             <Key>84430edee58049cb8da7f3a9e8ab9867</Key>
-            <Label>UnitsInStock</Label>
+            <Label>Units In Stock</Label>
           </Value>
         </Gauge1>
-        <Gauge2 Ref="36" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>220,80,240,220</ClientRectangle>
+        <Gauge2 Ref="20" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>280,360,280,240</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <Font>Arial,13</Font>
           <ForeColor>Transparent</ForeColor>
           <Guid>c2293a89ee484bc5b783f3459b064509</Guid>
@@ -307,93 +199,141 @@
           <Padding>5,5,5,5</Padding>
           <Page isRef="6" />
           <Parent isRef="6" />
-          <Title Ref="37" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Ranges isList="true" count="3">
+            <Item13 Ref="21" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>Red</Color>
+              <End>33</End>
+            </Item13>
+            <Item14 Ref="22" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>Yellow</Color>
+              <End>66</End>
+              <Start>33</Start>
+            </Item14>
+            <Item15 Ref="23" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>Green</Color>
+              <Start>66</Start>
+            </Item15>
+          </Ranges>
+          <Title Ref="24" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Units on Order</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
           <TransformSorts isList="true" count="0" />
-          <Value Ref="38" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+          <Type>HalfCircular</Type>
+          <Value Ref="25" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
             <Expression>Sum(Products.UnitsOnOrder)</Expression>
             <Key>2a696150b88143148c514223e2f59691</Key>
-            <Label>UnitsOnOrder</Label>
+            <Label>Units On Order</Label>
           </Value>
         </Gauge2>
-        <ListBox1 Ref="39" type="Stimulsoft.Dashboard.Components.ListBox.StiListBoxElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,80,220,160</ClientRectangle>
-          <Font>Segoe UI,9.75,Regular,Point,False,204</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>a31765e7dd924e0e9cf6c61761a8e800</Guid>
-          <KeyMeter Ref="40" type="Stimulsoft.Dashboard.Components.ListBox.StiKeyListBoxMeter" isKey="true">
-            <Expression>Suppliers.Country</Expression>
-            <Key>97dbf03467164ef396a3eb6d603f85a3</Key>
-            <Label>Country</Label>
-          </KeyMeter>
-          <Margin>3,3,3,3</Margin>
-          <Name>ListBox1</Name>
-          <NameMeter Ref="41" type="Stimulsoft.Dashboard.Components.ListBox.StiNameListBoxMeter" isKey="true">
-            <Expression>Suppliers.Country</Expression>
-            <Key>40179e13ebbb477aac7d9796991f1b3a</Key>
-            <Label>Country</Label>
-          </NameMeter>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="6" />
-          <Parent isRef="6" />
-          <SelectionMode>Multi</SelectionMode>
-          <ShowSelectAll>True</ShowSelectAll>
-          <Title Ref="42" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Arial,11</Font>
-            <Text>List Box</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-            <Visible>False</Visible>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-        </ListBox1>
-        <TreeView1 Ref="43" type="Stimulsoft.Dashboard.Components.TreeView.StiTreeViewElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,240,220,280</ClientRectangle>
+        <TreeView1 Ref="26" type="Stimulsoft.Dashboard.Components.TreeView.StiTreeViewElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>240,40,320,200</ClientRectangle>
+          <DataFilters isList="true" count="0" />
           <Font>Segoe UI,9.75,Regular,Point,False,204</Font>
           <ForeColor>Transparent</ForeColor>
           <Guid>5e2fda99fe8f47f5bb273362128ec67f</Guid>
-          <KeyMeters isList="true" count="2">
-            <Item27 Ref="44" type="Stimulsoft.Dashboard.Components.TreeView.StiKeyTreeViewMeter" isKey="true">
-              <Expression>Suppliers.City</Expression>
-              <Key>d45bdbcac0c24f879fb7e456dde3dcd1</Key>
-              <Label>City</Label>
-            </Item27>
-            <Item28 Ref="45" type="Stimulsoft.Dashboard.Components.TreeView.StiKeyTreeViewMeter" isKey="true">
-              <Expression>Suppliers.CompanyName</Expression>
-              <Key>4767174e50ae4b659062f11912d01f43</Key>
-              <Label>CompanyName</Label>
-            </Item28>
+          <KeyMeters isList="true" count="1">
+            <Item17 Ref="27" type="Stimulsoft.Dashboard.Components.TreeView.StiKeyTreeViewMeter" isKey="true">
+              <Expression>Products.ProductName</Expression>
+              <Key>97b2543783ad43d9ad299b9f46ee85ac</Key>
+              <Label>ProductName</Label>
+            </Item17>
           </KeyMeters>
           <Margin>3,3,3,3</Margin>
           <Name>TreeView1</Name>
           <Padding>5,5,5,5</Padding>
           <Page isRef="6" />
           <Parent isRef="6" />
-          <ParentKey>a31765e7dd924e0e9cf6c61761a8e800</ParentKey>
-          <Title Ref="46" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <ParentKey>a9f9d175c06246bab6a884a49197b9c1</ParentKey>
+          <ShowAllValue>True</ShowAllValue>
+          <Title Ref="28" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
             <Text>Tree View</Text>
-            <TextBrush>EmptyBrush</TextBrush>
             <Visible>False</Visible>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
           <TransformSorts isList="true" count="0" />
         </TreeView1>
+        <Indicator1 Ref="29" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,240,560,120</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>c382ee449cb14bb69383877f663085b2</Guid>
+          <Icon>StarFull</Icon>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator1</Name>
+          <Padding>5,5,5,5</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <TextFormat Ref="30" type="CurrencyFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>0</NegativePattern>
+            <PositivePattern>0</PositivePattern>
+          </TextFormat>
+          <Title Ref="31" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <HorAlignment>Center</HorAlignment>
+            <Text>Volume in Stock</Text>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <Value Ref="32" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum((Products.UnitPrice*Products.UnitsInStock)-(Products.UnitPrice*Products.UnitsOnOrder))</Expression>
+            <Key>f9674314d83346a8aad26907920f4d51</Key>
+            <Label>UnitPrice</Label>
+          </Value>
+        </Indicator1>
+        <TreeView2 Ref="33" type="Stimulsoft.Dashboard.Components.TreeView.StiTreeViewElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,40,240,200</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>a9f9d175c06246bab6a884a49197b9c1</Guid>
+          <KeyMeters isList="true" count="2">
+            <Item20 Ref="34" type="Stimulsoft.Dashboard.Components.TreeView.StiKeyTreeViewMeter" isKey="true">
+              <Expression>Suppliers.Country</Expression>
+              <Key>82ebb6e713284642983538ba8d2b258c</Key>
+              <Label>Country</Label>
+            </Item20>
+            <Item21 Ref="35" type="Stimulsoft.Dashboard.Components.TreeView.StiKeyTreeViewMeter" isKey="true">
+              <Expression>Suppliers.CompanyName</Expression>
+              <Key>f8d82c04f7954e24b9f2ffb5489bd8db</Key>
+              <Label>CompanyName</Label>
+            </Item21>
+          </KeyMeters>
+          <Margin>3,3,3,3</Margin>
+          <Name>TreeView2</Name>
+          <Padding>5,5,5,5</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <ShowAllValue>True</ShowAllValue>
+          <Title Ref="36" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Tree View</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+        </TreeView2>
       </Components>
       <Guid>e5ad235375934777afb61f0dceae1b1c</Guid>
       <Name>Dashboard1</Name>
@@ -401,7 +341,7 @@
       <Style>SlateGray</Style>
     </Dashboard1>
   </Pages>
-  <PrinterSettings Ref="47" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="37" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -413,10 +353,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>DashboardProducts</ReportAlias>
-  <ReportChanged>9/25/2018 9:33:21 AM</ReportChanged>
+  <ReportAuthor>Stimulsoft</ReportAuthor>
+  <ReportChanged>10/8/2018 5:06:17 PM</ReportChanged>
   <ReportCreated>9/2/2018 12:42:34 AM</ReportCreated>
-  <ReportFile>D:\Stimulsoft\Stimulsoft.Reports.Online.Demos\webdemo.stimulsoft.com\Reports\DashboardProducts.mrt</ReportFile>
-  <ReportGuid>78bf7687f1864f11b588cc72ff391022</ReportGuid>
+  <ReportGuid>1109675facd645758c15959bfe6bea9d</ReportGuid>
   <ReportName>DashboardProducts</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2018.3.1.0</ReportVersion>

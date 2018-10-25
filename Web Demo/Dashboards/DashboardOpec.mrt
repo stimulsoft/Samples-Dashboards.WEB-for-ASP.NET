@@ -48,73 +48,126 @@
   <MetaTags isList="true" count="0" />
   <Pages isList="true" count="1">
     <Dashboard1 Ref="4" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
-      <Brush>EmptyBrush</Brush>
-      <Components isList="true" count="13">
-        <Chart1 Ref="5" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
-          <Arguments isList="true" count="1">
-            <Item5 Ref="6" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
-              <Expression>Opec.Year</Expression>
-              <Key>23a26b1b1f97441b9f947aede2c819b7</Key>
-            </Item5>
-          </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,740,1000,260</ClientRectangle>
-          <CloseValues isList="true" count="0" />
-          <EndValues isList="true" count="0" />
-          <Guid>7c98abba766a456b991e5ac7a7738f46</Guid>
-          <HighValues isList="true" count="0" />
-          <LowValues isList="true" count="0" />
+      <Alias>Opec</Alias>
+      <BackColor>Transparent</BackColor>
+      <Components isList="true" count="4">
+        <Text1 Ref="5" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>ab3be7ef0aca40afa567681a3607f2c1</Guid>
           <Margin>3,3,3,3</Margin>
-          <Name>Chart1</Name>
+          <Name>Text1</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;OPEC&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="6" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text1>
+        <TableOpec Ref="7" type="Stimulsoft.Dashboard.Components.Table.StiTableElement" isKey="true">
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,40,1200,220</ClientRectangle>
+          <Columns isList="true" count="9">
+            <Item6 Ref="8" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
+              <Expression>Opec.Year</Expression>
+              <Key>3a6e2f3a4fdb49d3a5aecbd85e41784a</Key>
+              <Label>Year</Label>
+            </Item6>
+            <Item7 Ref="9" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
+              <Expression>Opec.Iran</Expression>
+              <HorAlignment>Right</HorAlignment>
+              <Key>9b998bbc67ba4ef7855e943db2b842a4</Key>
+              <TextFormat Ref="10" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+            </Item7>
+            <Item8 Ref="11" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(Opec.Iraq)</Expression>
+              <HorAlignment>Right</HorAlignment>
+              <Key>ba5674e1e1bd4d4b8935ea7be5f3f41f</Key>
+              <TextFormat Ref="12" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+            </Item8>
+            <Item9 Ref="13" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(Opec.Kuwait)</Expression>
+              <HorAlignment>Right</HorAlignment>
+              <Key>b09276e44c734ab1bdd22ec36ab71248</Key>
+              <TextFormat isRef="12" />
+            </Item9>
+            <Item10 Ref="14" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(Opec.Libya)</Expression>
+              <HorAlignment>Right</HorAlignment>
+              <Key>4a90d318feaf4d7d88b8c92e6e0be453</Key>
+              <TextFormat isRef="12" />
+            </Item10>
+            <Item11 Ref="15" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(Opec.Nigeria)</Expression>
+              <HorAlignment>Right</HorAlignment>
+              <Key>f70f83527c68468180398c4ba52c1a3d</Key>
+              <TextFormat isRef="12" />
+            </Item11>
+            <Item12 Ref="16" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum([Opec.Saudi Arabia])</Expression>
+              <HorAlignment>Right</HorAlignment>
+              <Key>cfc2c9232beb4f838bee58cef6cee70d</Key>
+              <TextFormat isRef="12" />
+            </Item12>
+            <Item13 Ref="17" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(Opec.UAE)</Expression>
+              <HorAlignment>Right</HorAlignment>
+              <Key>4defff2dc550471fa3a177906310090d</Key>
+              <TextFormat isRef="12" />
+            </Item13>
+            <Item14 Ref="18" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(Opec.Venezuela)</Expression>
+              <HorAlignment>Right</HorAlignment>
+              <Key>d4cc5a117c324f3baa42fab9db59c7b0</Key>
+              <TextFormat isRef="12" />
+            </Item14>
+          </Columns>
+          <DataFilters isList="true" count="0" />
+          <Guid>b9cf629747974c1f8b7e97e24e2b370b</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>TableOpec</Name>
           <Padding>5,5,5,5</Padding>
           <Page isRef="4" />
           <Parent isRef="4" />
-          <Title Ref="7" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Oil Production, thous. barrels per day</Text>
-            <TextBrush>EmptyBrush</TextBrush>
+          <SizeMode>Fit</SizeMode>
+          <Title Ref="19" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <Text>Opec</Text>
+            <Visible>False</Visible>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
           <TransformSorts isList="true" count="0" />
-          <Values isList="true" count="4">
-            <Item6 Ref="8" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
-              <Expression>Sum([Opec.Saudi Arabia])</Expression>
-              <Key>5b872bc566514099b6b9626717e8d3bd</Key>
-              <SeriesType>StackedColumn</SeriesType>
-            </Item6>
-            <Item7 Ref="9" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
-              <Expression>Sum(Opec.Nigeria)</Expression>
-              <Key>d3de300f0f794c65b234b95de3b019d8</Key>
-              <SeriesType>StackedColumn</SeriesType>
-            </Item7>
-            <Item8 Ref="10" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
-              <Expression>Sum(Opec.UAE)</Expression>
-              <Key>3c2547d0e2ae45dfa3efaba4c50946be</Key>
-              <SeriesType>StackedColumn</SeriesType>
-            </Item8>
-            <Item9 Ref="11" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
-              <Expression>Sum(Opec.Venezuela)</Expression>
-              <Key>8420aef2f495455ea20f32aef94e2d7c</Key>
-              <SeriesType>StackedColumn</SeriesType>
-            </Item9>
-          </Values>
-          <Weights isList="true" count="0" />
-        </Chart1>
-        <Chart2 Ref="12" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+        </TableOpec>
+        <Chart2 Ref="20" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
           <Arguments isList="true" count="1">
-            <Item11 Ref="13" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+            <Item16 Ref="21" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
               <Expression>Opec.Year</Expression>
               <Key>4e6e33d7abb648d793726b53aa4df2c5</Key>
-            </Item11>
+            </Item16>
           </Arguments>
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,480,1000,260</ClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,260,600,340</ClientRectangle>
           <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
           <EndValues isList="true" count="0" />
           <Guid>cd17efe037044e98a98854c7b7b62762</Guid>
           <HighValues isList="true" count="0" />
@@ -124,404 +177,94 @@
           <Padding>5,5,5,5</Padding>
           <Page isRef="4" />
           <Parent isRef="4" />
-          <Title Ref="14" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
+          <Title Ref="22" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
             <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
             <HorAlignment>Center</HorAlignment>
             <Text>Oil Production, thous. barrels per day</Text>
-            <TextBrush>EmptyBrush</TextBrush>
           </Title>
           <TransformActions isList="true" count="0" />
           <TransformFilters isList="true" count="0" />
           <TransformSorts isList="true" count="0" />
           <Values isList="true" count="4">
-            <Item12 Ref="15" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Item17 Ref="23" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
               <Expression>Sum(Opec.Iran)</Expression>
               <Key>7d9e85e9bb2a4685b9be5dc31d0f4823</Key>
               <SeriesType>StackedColumn</SeriesType>
-            </Item12>
-            <Item13 Ref="16" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            </Item17>
+            <Item18 Ref="24" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
               <Expression>Sum(Opec.Iraq)</Expression>
               <Key>ca454e0347a8413dbd5cc532f2f8acf2</Key>
               <SeriesType>StackedColumn</SeriesType>
-            </Item13>
-            <Item14 Ref="17" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            </Item18>
+            <Item19 Ref="25" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
               <Expression>Sum(Opec.Kuwait)</Expression>
               <Key>22c45c1c8f194d4baed2d294525af651</Key>
               <SeriesType>StackedColumn</SeriesType>
-            </Item14>
-            <Item15 Ref="18" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            </Item19>
+            <Item20 Ref="26" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
               <Expression>Sum(Opec.Libya)</Expression>
               <Key>d6ebbcb033ce4149931fb38ddf3b5d76</Key>
               <SeriesType>StackedColumn</SeriesType>
-            </Item15>
+            </Item20>
           </Values>
           <Weights isList="true" count="0" />
         </Chart2>
-        <ListBox1 Ref="19" type="Stimulsoft.Dashboard.Components.ListBox.StiListBoxElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,80,160,400</ClientRectangle>
-          <Font>Segoe UI,9.75,Regular,Point,False,204</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>58a31ff7c58d49ce852873258c0ae0a6</Guid>
-          <KeyMeter Ref="20" type="Stimulsoft.Dashboard.Components.ListBox.StiKeyListBoxMeter" isKey="true">
-            <Expression>Opec.Year</Expression>
-            <Key>01ca9032094a4d1eb9e1c895f4d21699</Key>
-          </KeyMeter>
-          <Margin>3,3,3,3</Margin>
-          <Name>ListBox1</Name>
-          <NameMeter Ref="21" type="Stimulsoft.Dashboard.Components.ListBox.StiNameListBoxMeter" isKey="true">
-            <Expression>Opec.Year</Expression>
-            <Key>2c1af5edc9684b8b9d99c43a45ea7b70</Key>
-          </NameMeter>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <SelectionMode>Multi</SelectionMode>
-          <Title Ref="22" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Arial,11</Font>
-            <Text>List Box</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-            <Visible>False</Visible>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-        </ListBox1>
-        <Text1 Ref="23" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,0,1000,80</ClientRectangle>
-          <Guid>ab3be7ef0aca40afa567681a3607f2c1</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Name>Text1</Name>
-          <Padding>0,0,0,0</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Text>&lt;font face="Segoe UI" size="36"&gt;&lt;text-align="Center"&gt;OPEC&lt;/text-align&gt;&lt;/font&gt;</Text>
-          <Title Ref="24" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Arial,11</Font>
-            <Text>Text</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-            <Visible>False</Visible>
-          </Title>
-        </Text1>
-        <TableOpec Ref="25" type="Stimulsoft.Dashboard.Components.Table.StiTableElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>160,80,280,400</ClientRectangle>
-          <Columns isList="true" count="8">
-            <Item19 Ref="26" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
-              <Expression>Opec.Iran</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>9b998bbc67ba4ef7855e943db2b842a4</Key>
-              <TextFormat Ref="27" type="NumberFormat" isKey="true">
-                <DecimalDigits>2</DecimalDigits>
-                <GroupSeparator>,</GroupSeparator>
-                <NegativePattern>1</NegativePattern>
-              </TextFormat>
-            </Item19>
-            <Item20 Ref="28" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
-              <Expression>Sum(Opec.Iraq)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>ba5674e1e1bd4d4b8935ea7be5f3f41f</Key>
-              <TextFormat Ref="29" type="NumberFormat" isKey="true">
-                <DecimalDigits>2</DecimalDigits>
-                <GroupSeparator>,</GroupSeparator>
-                <NegativePattern>1</NegativePattern>
-              </TextFormat>
-            </Item20>
-            <Item21 Ref="30" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
-              <Expression>Sum(Opec.Kuwait)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>b09276e44c734ab1bdd22ec36ab71248</Key>
-              <TextFormat isRef="29" />
-            </Item21>
-            <Item22 Ref="31" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
-              <Expression>Sum(Opec.Libya)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>4a90d318feaf4d7d88b8c92e6e0be453</Key>
-              <TextFormat isRef="29" />
+        <Chart1 Ref="27" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <Arguments isList="true" count="1">
+            <Item22 Ref="28" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+              <Expression>Opec.Year</Expression>
+              <Key>23a26b1b1f97441b9f947aede2c819b7</Key>
             </Item22>
-            <Item23 Ref="32" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
-              <Expression>Sum(Opec.Nigeria)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>f70f83527c68468180398c4ba52c1a3d</Key>
-              <TextFormat isRef="29" />
-            </Item23>
-            <Item24 Ref="33" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+          </Arguments>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,260,600,340</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Guid>7c98abba766a456b991e5ac7a7738f46</Guid>
+          <HighValues isList="true" count="0" />
+          <LowValues isList="true" count="0" />
+          <Margin>3,3,3,3</Margin>
+          <Name>Chart1</Name>
+          <Padding>5,5,5,5</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Title Ref="29" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <HorAlignment>Center</HorAlignment>
+            <Text>Oil Production, thous. barrels per day</Text>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <Values isList="true" count="4">
+            <Item23 Ref="30" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
               <Expression>Sum([Opec.Saudi Arabia])</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>cfc2c9232beb4f838bee58cef6cee70d</Key>
-              <TextFormat isRef="29" />
+              <Key>5b872bc566514099b6b9626717e8d3bd</Key>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item23>
+            <Item24 Ref="31" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(Opec.Nigeria)</Expression>
+              <Key>d3de300f0f794c65b234b95de3b019d8</Key>
+              <SeriesType>StackedColumn</SeriesType>
             </Item24>
-            <Item25 Ref="34" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+            <Item25 Ref="32" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
               <Expression>Sum(Opec.UAE)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>4defff2dc550471fa3a177906310090d</Key>
-              <TextFormat isRef="29" />
+              <Key>3c2547d0e2ae45dfa3efaba4c50946be</Key>
+              <SeriesType>StackedColumn</SeriesType>
             </Item25>
-            <Item26 Ref="35" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+            <Item26 Ref="33" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
               <Expression>Sum(Opec.Venezuela)</Expression>
-              <HorAlignment>Right</HorAlignment>
-              <Key>d4cc5a117c324f3baa42fab9db59c7b0</Key>
-              <TextFormat isRef="29" />
+              <Key>8420aef2f495455ea20f32aef94e2d7c</Key>
+              <SeriesType>StackedColumn</SeriesType>
             </Item26>
-          </Columns>
-          <Guid>b9cf629747974c1f8b7e97e24e2b370b</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Name>TableOpec</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="36" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Arial,11</Font>
-            <Text>Opec</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-            <Visible>False</Visible>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <UserFilters isList="true" count="0" />
-          <UserSorts isList="true" count="0" />
-        </TableOpec>
-        <Gauge1 Ref="37" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>440,80,140,200</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>7b12623dcdfe4c4891e8d9c1630e1e70</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge1</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="38" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Iran</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="39" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum(Opec.Iran)</Expression>
-            <Key>de122516ce4d4d3fb2c033bb63ae44cd</Key>
-          </Value>
-        </Gauge1>
-        <Gauge2 Ref="40" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>580,80,140,200</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>f2de239c381c4b4abb399e38778fd6e3</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge2</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="41" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Iraq</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="42" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum(Opec.Iraq)</Expression>
-            <Key>240535ae00de4089bafbd7d298a7b640</Key>
-          </Value>
-        </Gauge2>
-        <Gauge3 Ref="43" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>720,80,140,200</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>ba79c329a79c4b6fa3d291b95827092b</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge3</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="44" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Kuwait</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="45" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum(Opec.Kuwait)</Expression>
-            <Key>8f35d16c49b7489ba200a13e79d1a894</Key>
-          </Value>
-        </Gauge3>
-        <Gauge4 Ref="46" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>860,80,140,200</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>295f324bfd9d4e319e200600ddd0bec2</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge4</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="47" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Libya</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="48" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum(Opec.Libya)</Expression>
-            <Key>c36c7d7aaefc4d5ab5a50fa794a33150</Key>
-          </Value>
-        </Gauge4>
-        <Gauge5 Ref="49" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>440,280,140,200</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>60b092f9d4184802b445e5bbb09086d7</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge5</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="50" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Nigeria</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="51" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum(Opec.Nigeria)</Expression>
-            <Key>48b763a81b0c46f8a6fa49c5296d07ad</Key>
-          </Value>
-        </Gauge5>
-        <Gauge6 Ref="52" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>580,280,140,200</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>c3d527bba88642d48c114c60619f4bbf</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge6</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="53" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Saudi Arabia</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="54" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum([Opec.Saudi Arabia])</Expression>
-            <Key>e555ab988d60412db95d831dd3f1c776</Key>
-          </Value>
-        </Gauge6>
-        <Gauge7 Ref="55" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>720,280,140,200</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>0679b8ecd03d447991dfe9b9bd5121b5</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge7</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="56" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>UAE</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="57" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum(Opec.UAE)</Expression>
-            <Key>02777d225d014c9a9e2936fa88239e22</Key>
-          </Value>
-        </Gauge7>
-        <Gauge8 Ref="58" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
-          <Border>None;Gray;1;Solid;False;4;Black</Border>
-          <Brush>EmptyBrush</Brush>
-          <ClientRectangle>860,280,140,200</ClientRectangle>
-          <Font>Arial,13</Font>
-          <ForeColor>Transparent</ForeColor>
-          <Guid>0e07e69e1de3428f8b5785ae9b71fd78</Guid>
-          <Margin>3,3,3,3</Margin>
-          <Maximum>100</Maximum>
-          <Minimum>0</Minimum>
-          <Name>Gauge8</Name>
-          <Padding>5,5,5,5</Padding>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <Title Ref="59" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
-            <Brush>EmptyBrush</Brush>
-            <Font>Segoe UI,15.75,Regular,Point,False,204</Font>
-            <HorAlignment>Center</HorAlignment>
-            <Text>Venezuela</Text>
-            <TextBrush>EmptyBrush</TextBrush>
-          </Title>
-          <TransformActions isList="true" count="0" />
-          <TransformFilters isList="true" count="0" />
-          <TransformSorts isList="true" count="0" />
-          <Value Ref="60" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
-            <Expression>Sum(Opec.Venezuela)</Expression>
-            <Key>0f309344cd9b414d89d1df37c695d0ca</Key>
-          </Value>
-        </Gauge8>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart1>
       </Components>
       <Guid>5f20f570bcf2462292771eb4273fa7df</Guid>
       <Name>Dashboard1</Name>
@@ -529,7 +272,7 @@
     </Dashboard1>
   </Pages>
   <PreviewSettings>268435455</PreviewSettings>
-  <PrinterSettings Ref="61" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <PrinterSettings Ref="34" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -541,9 +284,9 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>DashboardOpec</ReportAlias>
-  <ReportChanged>9/24/2018 4:17:45 PM</ReportChanged>
+  <ReportChanged>10/8/2018 5:01:06 PM</ReportChanged>
   <ReportCreated>3/22/2016 10:27:51 AM</ReportCreated>
-  <ReportGuid>9fa3247824b84fc2a754f980a139bfcf</ReportGuid>
+  <ReportGuid>49d8a5922cab412cbac1083594cea655</ReportGuid>
   <ReportName>DashboardOpec</ReportName>
   <ReportUnit>HundredthsOfInch</ReportUnit>
   <ReportVersion>2018.3.1.0</ReportVersion>

@@ -1,10 +1,10 @@
 {
   "ReportVersion": "2018.3.1.0",
-  "ReportGuid": "045a5a4f8f3c494ab075684fad261b13",
+  "ReportGuid": "57728d8e9184469fa9b0d85c646a1fd8",
   "ReportName": "DashboardOnlineStoreSales",
   "ReportAlias": "DashboardOnlineStoreSales",
   "ReportCreated": "/Date(1531223785358+0300)/",
-  "ReportChanged": "/Date(1537795044038+0300)/",
+  "ReportChanged": "/Date(1539007246920+0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Inches",
@@ -139,14 +139,14 @@
       "Ident": "StiDashboard",
       "Name": "Dashboard1",
       "Guid": "8160e76fc0c84f18a7c3e35f6413334d",
-      "Border": ";;2;;;;;solid:Black",
-      "Brush": "empty",
+      "Alias": "Online Store Sales",
+      "Brush": "solid:",
       "Components": {
         "0": {
           "Ident": "StiTextElement",
           "Name": "Text1",
           "Guid": "3d9d8a197d634129b476daf72f5feab5",
-          "ClientRectangle": "0,0,680,60",
+          "ClientRectangle": "0,0,1200,40",
           "Margin": {
             "Left": 0.0,
             "Top": 0.0,
@@ -159,44 +159,21 @@
             "Right": 5.0,
             "Bottom": 0.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "solid:51,71,91",
-          "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Left\"><font-color=\"White\">Online Store Sales</font-color></text-align></font>"
+          "Border": ";;;;",
+          "Text": "<font face=\"Segoe UI\" size=\"36\"><text-align=\"Center\">Online Store Sales</text-align></font>"
         },
         "1": {
-          "Ident": "StiTextElement",
-          "Name": "Text2",
-          "Guid": "9a7f9d8985714555abaa4fec7a46b034",
-          "ClientRectangle": "680,0,320,60",
-          "Margin": {
-            "Left": 0.0,
-            "Top": 0.0,
-            "Right": 0.0,
-            "Bottom": 0.0
-          },
-          "Padding": {
-            "Left": 5.0,
-            "Top": 0.0,
-            "Right": 5.0,
-            "Bottom": 0.0
-          },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "solid:51,71,91",
-          "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Right\"><font-color=\"White\">Stimulsoft</font-color></text-align></font>"
-        },
-        "2": {
           "Ident": "StiChartElement",
           "Name": "Chart1",
           "Guid": "c58680ce4147410eaeeef95ce624060c",
-          "ClientRectangle": "0,100,1000,460",
+          "ClientRectangle": "0,80,680,520",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Values": {
             "0": {
               "Ident": "ValueChartMeter",
@@ -214,40 +191,60 @@
             "0": {
               "Ident": "ArgumentChartMeter",
               "Expression": "Volume.YearID",
-              "Label": "YearID"
+              "Label": "Year ID"
             }
           },
           "Title": {
             "Text": "Chart",
             "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           }
         },
-        "3": {
+        "2": {
           "Ident": "StiTextElement",
           "Name": "Text3",
           "Guid": "43d801bf9c9d442983b1c860d1fbd477",
-          "ClientRectangle": "0,560,1000,80",
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "ClientRectangle": "680,80,520,40",
+          "Border": ";;;;",
           "Text": "<font face=\"Arial\" size=\"24\"><text-align=\"Center\">Devices from which orders were placed</text-align></font>"
         },
-        "4": {
-          "Ident": "StiGaugeElement",
-          "Name": "Gauge1",
-          "Guid": "4407575c9dd84a18999269be8b25bb99",
-          "ClientRectangle": "0,640,320,360",
+        "3": {
+          "Ident": "StiComboBoxElement",
+          "Name": "ComboBox1",
+          "Guid": "132b17a6fb0048829e2b2f5100e32e7d",
+          "ClientRectangle": "0,40,1200,40",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
+          "SelectionMode": "Multi",
+          "NameMeter": {
+            "Ident": "NameComboBoxMeter",
+            "Expression": "Volume.Year",
+            "Label": "Year"
+          },
+          "KeyMeter": {
+            "Ident": "KeyComboBoxMeter",
+            "Expression": "Volume.YearID",
+            "Label": "YearID"
+          }
+        },
+        "4": {
+          "Ident": "StiGaugeElement",
+          "Name": "Gauge1",
+          "Guid": "4407575c9dd84a18999269be8b25bb99",
+          "ClientRectangle": "680,440,520,160",
+          "Padding": {
+            "Left": 5.0,
+            "Top": 5.0,
+            "Right": 5.0,
+            "Bottom": 5.0
+          },
+          "Border": ";;;;",
           "Value": {
             "Ident": "ValueGaugeMeter",
             "Expression": "Sum(RelativeShare.PC)",
@@ -262,8 +259,6 @@
             "Text": "PC",
             "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           },
           "Font": ";13;;"
@@ -272,15 +267,14 @@
           "Ident": "StiGaugeElement",
           "Name": "Gauge2",
           "Guid": "973710aeebc84dcfa79265ffef1ecf9f",
-          "ClientRectangle": "320,640,340,360",
+          "ClientRectangle": "680,280,520,160",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Value": {
             "Ident": "ValueGaugeMeter",
             "Expression": "Sum(RelativeShare.Phone)",
@@ -295,8 +289,6 @@
             "Text": "Phone",
             "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           },
           "Font": ";13;;"
@@ -305,15 +297,14 @@
           "Ident": "StiGaugeElement",
           "Name": "Gauge3",
           "Guid": "e6a9605d0170492aa7d684204dab6e03",
-          "ClientRectangle": "660,640,340,360",
+          "ClientRectangle": "680,120,520,160",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Value": {
             "Ident": "ValueGaugeMeter",
             "Expression": "Sum(RelativeShare.Tablet)",
@@ -328,39 +319,12 @@
             "Text": "Tablet",
             "Visible": true,
             "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
             "HorAlignment": "Left"
           },
           "Font": ";13;;"
-        },
-        "7": {
-          "Ident": "StiComboBoxElement",
-          "Name": "ComboBox1",
-          "Guid": "132b17a6fb0048829e2b2f5100e32e7d",
-          "ClientRectangle": "0,60,1000,40",
-          "Padding": {
-            "Left": 5.0,
-            "Top": 5.0,
-            "Right": 5.0,
-            "Bottom": 5.0
-          },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
-          "ShowSelectAll": true,
-          "SelectionMode": "Multi",
-          "NameMeter": {
-            "Ident": "NameComboBoxMeter",
-            "Expression": "Volume.Year",
-            "Label": "Year"
-          },
-          "KeyMeter": {
-            "Ident": "KeyComboBoxMeter",
-            "Expression": "Volume.YearID",
-            "Label": "YearID"
-          }
         }
-      }
+      },
+      "Border": ";;2;;;;;solid:Black"
     }
   }
 }

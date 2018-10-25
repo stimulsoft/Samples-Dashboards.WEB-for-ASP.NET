@@ -1,10 +1,10 @@
 {
   "ReportVersion": "2018.3.1.0",
-  "ReportGuid": "3bf40ee549ac44a19adf3d5c9d075bae",
+  "ReportGuid": "e5b205def5264b58ae6ea5aa85934b9d",
   "ReportName": "DashboardSiteStatistics",
   "ReportAlias": "DashboardSiteStatistics",
   "ReportCreated": "/Date(1531223785358+0300)/",
-  "ReportChanged": "/Date(1538376784529+0300)/",
+  "ReportChanged": "/Date(1539007814683+0300)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "ReportUnit": "Inches",
@@ -153,14 +153,14 @@
       "Ident": "StiDashboard",
       "Name": "Dashboard1",
       "Guid": "8160e76fc0c84f18a7c3e35f6413334d",
-      "Border": ";;2;;;;;solid:Black",
-      "Brush": "empty",
+      "Alias": "Site Statistics",
+      "Brush": "solid:",
       "Components": {
         "0": {
           "Ident": "StiTextElement",
           "Name": "Text1",
           "Guid": "3d9d8a197d634129b476daf72f5feab5",
-          "ClientRectangle": "0,0,680,60",
+          "ClientRectangle": "0,0,1200,40",
           "Margin": {
             "Left": 0.0,
             "Top": 0.0,
@@ -173,96 +173,21 @@
             "Right": 0.0,
             "Bottom": 0.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Left\"><font-color=\"#DDDDDD\">Count & Conversion</font-color></text-align></font>"
         },
         "1": {
-          "Ident": "StiTextElement",
-          "Name": "Text2",
-          "Guid": "9a7f9d8985714555abaa4fec7a46b034",
-          "ClientRectangle": "680,0,320,60",
-          "Margin": {
-            "Left": 0.0,
-            "Top": 0.0,
-            "Right": 0.0,
-            "Bottom": 0.0
-          },
-          "Padding": {
-            "Left": 0.0,
-            "Top": 0.0,
-            "Right": 5.0,
-            "Bottom": 0.0
-          },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
-          "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Right\"><font-color=\"#DDDDDD\">Stimulsoft</font-color></text-align></font>"
-        },
-        "2": {
-          "Ident": "StiChartElement",
-          "Name": "Chart1",
-          "Guid": "e4c1c636bc01478da34846533666673b",
-          "ClientRectangle": "0,100,1000,400",
-          "Padding": {
-            "Left": 5.0,
-            "Top": 5.0,
-            "Right": 5.0,
-            "Bottom": 5.0
-          },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
-          "Values": {
-            "0": {
-              "Ident": "ValueChartMeter",
-              "Expression": "Sum(Visitors.Passers)",
-              "Label": "Passers",
-              "SeriesType": "Line"
-            },
-            "1": {
-              "Ident": "ValueChartMeter",
-              "Expression": "Sum(Visitors.Visitors)",
-              "Label": "Visitors",
-              "SeriesType": "Line"
-            }
-          },
-          "Arguments": {
-            "0": {
-              "Ident": "ArgumentChartMeter",
-              "Expression": "Visitors.Date",
-              "Label": "Date"
-            }
-          },
-          "Title": {
-            "Text": "Chart",
-            "Visible": true,
-            "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
-            "HorAlignment": "Left"
-          }
-        },
-        "3": {
-          "Ident": "StiTextElement",
-          "Name": "Text3",
-          "Guid": "94ff1405681d43c4a4525756a365e399",
-          "ClientRectangle": "0,500,1000,60",
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
-          "Text": "<font face=\"Arial\" size=\"22\"><text-align=\"Center\">Dwell & Repeat</text-align></font>"
-        },
-        "4": {
           "Ident": "StiChartElement",
           "Name": "Chart2",
           "Guid": "1fa50c3a2cee4d4ebe96479586b86266",
-          "ClientRectangle": "0,560,500,440",
+          "ClientRectangle": "600,200,600,400",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "TransformSorts": {
             "0": {
               "Key": "Users",
@@ -303,27 +228,23 @@
             }
           },
           "Title": {
-            "Text": "Chart",
+            "Text": "Dwell",
             "Visible": true,
-            "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
-            "HorAlignment": "Left"
+            "Font": "Segoe UI;15.75;;"
           }
         },
-        "5": {
+        "2": {
           "Ident": "StiChartElement",
           "Name": "Chart3",
           "Guid": "435fd5d5406c421fb2a025c5107c7b88",
-          "ClientRectangle": "500,560,500,440",
+          "ClientRectangle": "0,200,600,400",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
+          "Border": ";;;;",
           "Values": {
             "0": {
               "Ident": "ValueChartMeter",
@@ -340,41 +261,64 @@
             }
           },
           "Title": {
-            "Text": "Chart",
+            "Text": "Repeats",
             "Visible": true,
-            "Font": ";11;;",
-            "Brush": "empty",
-            "TextBrush": "empty",
-            "HorAlignment": "Left"
+            "Font": "Segoe UI;15.75;;"
           }
         },
-        "6": {
-          "Ident": "StiComboBoxElement",
-          "Name": "ComboBox1",
-          "Guid": "cf653a017f674d07b33a606db9557db1",
-          "ClientRectangle": "0,60,1000,40",
+        "3": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator1",
+          "Guid": "f09215d6de794d859971fc12a960694c",
+          "ClientRectangle": "0,40,600,160",
           "Padding": {
             "Left": 5.0,
             "Top": 5.0,
             "Right": 5.0,
             "Bottom": 5.0
           },
-          "Border": ";Gray;;;;;;solid:Black",
-          "Brush": "empty",
-          "SelectionMode": "Multi",
-          "NameMeter": {
-            "Ident": "NameComboBoxMeter",
-            "Expression": "Visitors.Date",
-            "Label": "Date"
+          "Border": ";;;;",
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Expression": "Sum(Visitors.Passers)",
+            "Label": "Passers"
           },
-          "KeyMeter": {
-            "Ident": "KeyComboBoxMeter",
-            "Expression": "Visitors.DateID",
-            "Label": "DateID"
-          }
+          "Title": {
+            "Text": "Passers",
+            "Visible": true,
+            "Font": "Segoe UI;15.75;;"
+          },
+          "Font": ";13;;",
+          "Icon": "ManWoman"
+        },
+        "4": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator2",
+          "Guid": "b1b2bd55f8af4345abc88730aa998fb5",
+          "ClientRectangle": "600,40,600,160",
+          "Padding": {
+            "Left": 5.0,
+            "Top": 5.0,
+            "Right": 5.0,
+            "Bottom": 5.0
+          },
+          "Border": ";;;;",
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Expression": "Sum(Visitors.Visitors)",
+            "Label": "Visitors"
+          },
+          "Title": {
+            "Text": "Visitors",
+            "Visible": true,
+            "Font": "Segoe UI;15.75;;"
+          },
+          "Font": ";13;;",
+          "Icon": "ManWoman"
         }
       },
-      "Style": "DarkBlue"
+      "Style": "DarkBlue",
+      "Border": ";;2;;;;;solid:Black"
     }
   }
 }

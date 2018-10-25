@@ -13,13 +13,22 @@ namespace Web_Demo {
     public partial class SiteMaster {
         
         /// <summary>
-        /// ListBoxDashboards control.
+        /// main control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBoxDashboards;
+        protected global::System.Web.UI.HtmlControls.HtmlForm main;
+        
+        /// <summary>
+        /// PanelDashboards control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelDashboards;
         
         /// <summary>
         /// MainContent control.

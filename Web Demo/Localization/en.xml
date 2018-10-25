@@ -593,6 +593,9 @@
     <StiZipCode>ZIP Code</StiZipCode>
   </Components>
   <Dashboard>
+    <AddRange>Add Range</AddRange>
+    <RangeMode>Range Mode</RangeMode>
+    <RangeType>Range Type</RangeType>
     <ShowAllValue>Show (All) Value</ShowAllValue>
     <AfterGroupingData>Apply after grouping data</AfterGroupingData>
     <Blanks>(Blanks)</Blanks>
@@ -2537,6 +2540,10 @@
     <YellowGreen>Yellow Green</YellowGreen>
   </PropertyColor>
   <PropertyEnum>
+    <StiGaugeRangeModePercentage>Percentage</StiGaugeRangeModePercentage>
+    <StiGaugeRangeModeValue>Value</StiGaugeRangeModeValue>
+    <StiGaugeRangeTypeNone>None</StiGaugeRangeTypeNone>
+    <StiGaugeRangeTypeColor>Color</StiGaugeRangeTypeColor>
     <boolFalse>False</boolFalse>
     <boolTrue>True</boolTrue>
     <BorderStyleFixed3D>Fixed 3D</BorderStyleFixed3D>
@@ -4057,6 +4064,7 @@
     <qnSynchronizeServices>Synchronized services?</qnSynchronizeServices>
   </Questions>
   <Report>
+    <Checking>Checking...</Checking>
     <ActiveRelation>Active Relation</ActiveRelation>
     <Address>Address</Address>
     <Alphabetical>Alphabetical</Alphabetical>

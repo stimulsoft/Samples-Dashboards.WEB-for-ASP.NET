@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -17,12 +14,16 @@ namespace Web_Demo
                 var dashboardFiles = Directory.GetFiles(Server.MapPath("/Dashboards"), "*.mrt");
                 foreach (var filePath in dashboardFiles)
                 {
-                    var fileName = Path.GetFileName(filePath);
-                    var item = new ListItem(fileName.Substring(9, fileName.Length - 9 - 4), filePath);
-                    ListBoxDashboards.Items.Add(item);
+                    var fileName = Path.GetFileNameWithoutExtension(filePath);
+                    var link = new HyperLink()
+                    {
+                        Text = fileName.Substring(9),
+                        NavigateUrl = $"Default/?id={fileName}",
+                        CssClass = (Page.Request.QueryString.Get("id") ?? "DashboardChristmas") == fileName ? "current" : ""
+                    };
+                    
+                    PanelDashboards.Controls.Add(link);
                 }
-
-                ListBoxDashboards.SelectedIndex = 0;
             }
         }
 

@@ -3,6 +3,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <cc1:StiWebViewer ID="StiWebViewer1" runat="server" />
+    <cc1:StiWebViewer ID="StiWebViewer1" runat="server" 
+        BackgroundColor="#e8e8e8" ScrollbarsMode="true" ToolbarDisplayMode="Separated" ShowDesignButton="true"
+        Width="100%" Height="100%" />
 
 </asp:Content>
