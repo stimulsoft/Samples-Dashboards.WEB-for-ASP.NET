@@ -22,13 +22,22 @@ namespace Web_Demo {
         protected global::System.Web.UI.HtmlControls.HtmlForm main;
         
         /// <summary>
-        /// PanelDashboards control.
+        /// MainPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelDashboards;
+        protected global::System.Web.UI.WebControls.Panel MainPanel;
+        
+        /// <summary>
+        /// DashboardsPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel DashboardsPanel;
         
         /// <summary>
         /// MainContent control.
@@ -38,5 +47,14 @@ namespace Web_Demo {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        
+        /// <summary>
+        /// SiteLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink SiteLink;
     }
 }

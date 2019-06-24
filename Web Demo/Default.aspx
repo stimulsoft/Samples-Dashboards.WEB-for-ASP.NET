@@ -5,6 +5,7 @@
 
     <cc1:StiWebViewer ID="StiWebViewer1" runat="server" 
         BackgroundColor="#e8e8e8" ScrollbarsMode="true" ToolbarDisplayMode="Separated" ShowDesignButton="true"
-        Width="100%" Height="100%" />
+        Width="100%" Height="100%"
+        OnDesignReport="StiWebViewer1_DesignReport" />
 
 </asp:Content>

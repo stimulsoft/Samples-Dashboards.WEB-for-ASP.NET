@@ -21,8 +21,8 @@ namespace Web_Demo
                         NavigateUrl = $"Default/?id={fileName}",
                         CssClass = (Page.Request.QueryString.Get("id") ?? "DashboardChristmas") == fileName ? "current" : ""
                     };
-                    
-                    PanelDashboards.Controls.Add(link);
+
+                    DashboardsPanel.Controls.Add(link);
                 }
             }
         }
