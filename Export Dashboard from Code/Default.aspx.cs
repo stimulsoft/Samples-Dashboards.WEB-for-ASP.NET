@@ -26,7 +26,7 @@ namespace Export_Dashboard_from_Code
 
         private StiReport GetTemplate()
         {
-            var report = new StiReport();
+            var report = StiReport.CreateNewDashboard();
             report.Load(Server.MapPath("Dashboards/DashboardChristmas.mrt"));
 
             return report;

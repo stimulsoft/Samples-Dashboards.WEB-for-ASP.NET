@@ -22,7 +22,7 @@ namespace Edit_Dashboard_in_the_Designer
         protected void StiWebDesigner1_GetReport(object sender, Stimulsoft.Report.Web.StiReportDataEventArgs e)
         {
             string dashboardPath = Server.MapPath("Dashboards/DashboardChristmas.mrt");
-            var report = new StiReport();
+            var report = StiReport.CreateNewDashboard();
             report.Load(dashboardPath);
 
             e.Report = report;

@@ -27,10 +27,10 @@ namespace Register_Data_for_Dashboard_Template
 
         protected void StiWebViewer1_GetReport(object sender, Stimulsoft.Report.Web.StiReportDataEventArgs e)
         {
-            // Create new report
-            var report = new StiReport();
+            // Create new dashboard
+            var report = StiReport.CreateNewDashboard();
 
-            // Load report template
+            // Load dashboard template
             report.Load(Server.MapPath("Dashboards/Dashboard.mrt"));
 
             // Load a JSON file
@@ -40,13 +40,13 @@ namespace Register_Data_for_Dashboard_Template
             var json = StiJsonConnector.Get();
             var dataSet = json.GetDataSet(new StiJsonOptions(jsonBytes));
 
-            // Remove all connections from the report template
+            // Remove all connections from the dashboard template
             report.Dictionary.Databases.Clear();
 
             // Register DataSet object
             report.RegData("Demo", "Demo", dataSet);
 
-            // Show Report in the Web Viewer
+            // Show dashboard in the Web Viewer
             e.Report = report;
         }
     }

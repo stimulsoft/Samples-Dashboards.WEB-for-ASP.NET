@@ -21,7 +21,7 @@ namespace Web_Demo
         {
             var fileName = Page.Request.QueryString.Get("id") ?? "DashboardChristmas";
 
-            var report = new StiReport();
+            var report = StiReport.CreateNewDashboard();
             report.Load(Server.MapPath($"~/Dashboards/{fileName}.mrt"));
 
             // Set styles for website from dashboard

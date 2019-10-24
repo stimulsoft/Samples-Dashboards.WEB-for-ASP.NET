@@ -22,7 +22,7 @@ namespace Show_Dashboard_in_the_Viewer
         protected void StiWebViewer1_GetReport(object sender, Stimulsoft.Report.Web.StiReportDataEventArgs e)
         {
             string dashboardPath = Server.MapPath("Dashboards/DashboardChristmas.mrt");
-            var report = new StiReport();
+            var report = StiReport.CreateNewDashboard();
             report.Load(dashboardPath);
 
             e.Report = report;
