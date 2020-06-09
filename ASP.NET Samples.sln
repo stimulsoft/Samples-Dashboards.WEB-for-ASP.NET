@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2041
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web Demo", "Web Demo\Web Demo.csproj", "{357D5F55-267F-4EAA-94A7-0AFEC69569D6}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runtime Dashboard Creation", "Runtime Dashboard Creation\Runtime Dashboard Creation.csproj", "{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Export Dashboard from Code", "Export Dashboard from Code\Export Dashboard from Code.csproj", "{7547454A-0380-4F59-A288-C345FAFA042B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using the Dashboard Theme on the Website", "Using the Dashboard Theme on the Website\Using the Dashboard Theme on the Website.csproj", "{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{7547454A-0380-4F59-A288-C345FAFA042B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7547454A-0380-4F59-A288-C345FAFA042B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7547454A-0380-4F59-A288-C345FAFA042B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
