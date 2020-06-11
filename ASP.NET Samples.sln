@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Export Dashboard from Code"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using the Dashboard Theme on the Website", "Using the Dashboard Theme on the Website\Using the Dashboard Theme on the Website.csproj", "{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add Custom Function to the Designer", "Add Custom Function to the Designer\Add Custom Function to the Designer.csproj", "{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
