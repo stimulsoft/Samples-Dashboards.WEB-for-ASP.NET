@@ -1,10 +1,16 @@
-﻿<%@ Page Title="Show Dashboard in the Viewer" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Show_Dashboard_in_the_Viewer._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Show_Dashboard_in_the_Viewer.Default" %>
 <%@ Register assembly="Stimulsoft.Report.Web" namespace="Stimulsoft.Report.Web" tagprefix="cc1" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <br />
+<!DOCTYPE html>
 
-    <cc1:StiWebViewer ID="StiWebViewer1" runat="server"
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <cc1:StiWebViewer ID="StiWebViewer1" runat="server"
             OnGetReport="StiWebViewer1_GetReport" />
-
-</asp:Content>
+    </form>
+</body>
+</html>

@@ -7,11 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Runtime_Dashboard_Creation {
-    
-    
-    public partial class _Default {
-        
+namespace Runtime_Dashboard_Creation
+{
+
+
+    public partial class Default
+    {
+
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
         /// <summary>
         /// ButtonShow control.
         /// </summary>
@@ -20,7 +31,7 @@ namespace Runtime_Dashboard_Creation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonShow;
-        
+
         /// <summary>
         /// ButtonEdit control.
         /// </summary>
@@ -29,7 +40,16 @@ namespace Runtime_Dashboard_Creation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonEdit;
-        
+
+        /// <summary>
+        /// ButtonExport control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonExport;
+
         /// <summary>
         /// StiWebViewer1 control.
         /// </summary>
@@ -38,7 +58,7 @@ namespace Runtime_Dashboard_Creation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Stimulsoft.Report.Web.StiWebViewer StiWebViewer1;
-        
+
         /// <summary>
         /// StiWebDesigner1 control.
         /// </summary>

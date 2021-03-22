@@ -7,11 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Export_Dashboard_from_Code {
-    
-    
-    public partial class _Default {
-        
+namespace Export_Dashboard_from_Code
+{
+
+
+    public partial class Default
+    {
+
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
         /// <summary>
         /// ButtonExportPdf control.
         /// </summary>
@@ -20,7 +31,7 @@ namespace Export_Dashboard_from_Code {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonExportPdf;
-        
+
         /// <summary>
         /// ButtonExportExcel control.
         /// </summary>
@@ -29,7 +40,7 @@ namespace Export_Dashboard_from_Code {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonExportExcel;
-        
+
         /// <summary>
         /// ButtonExportImage control.
         /// </summary>

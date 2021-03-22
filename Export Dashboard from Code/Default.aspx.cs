@@ -9,9 +9,9 @@ using System.Web.UI.WebControls;
 
 namespace Export_Dashboard_from_Code
 {
-    public partial class _Default : Page
+    public partial class Default : Page
     {
-        static _Default()
+        static Default()
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";

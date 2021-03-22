@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace Add_Custom_Function_to_the_Designer
 {
-    public partial class _Default : Page
+    public partial class Default : Page
     {
         public static decimal MySum(object value)
         {
@@ -22,7 +22,7 @@ namespace Add_Custom_Function_to_the_Designer
                 .Sum();
         }
 
-        static _Default()
+        static Default()
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
@@ -31,7 +31,7 @@ namespace Add_Custom_Function_to_the_Designer
 
             // How to add my function
             StiFunctions.AddFunction("MyCategory", "MySum",
-                "description", typeof(_Default),
+                "description", typeof(Default),
                 typeof(decimal), "Calculates a sum of the specified set of values.",
                 new[] { typeof(object) },
                 new[] { "values" },

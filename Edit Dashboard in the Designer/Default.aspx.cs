@@ -1,12 +1,16 @@
 ﻿using Stimulsoft.Report;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace Edit_Dashboard_in_the_Designer
 {
-    public partial class _Default : Page
+    public partial class Default : Page
     {
-        static _Default()
+        static Default()
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";

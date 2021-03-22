@@ -1,5 +1,6 @@
 ﻿using Stimulsoft.Base;
 using Stimulsoft.Report;
+using Stimulsoft.Report.Web;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,9 +11,9 @@ using System.Web.UI.WebControls;
 
 namespace Register_Data_for_Dashboard_Template
 {
-    public partial class _Default : Page
+    public partial class Default : Page
     {
-        static _Default()
+        static Default()
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
@@ -25,7 +26,7 @@ namespace Register_Data_for_Dashboard_Template
 
         }
 
-        protected void StiWebViewer1_GetReport(object sender, Stimulsoft.Report.Web.StiReportDataEventArgs e)
+        protected void StiWebViewer1_GetReport(object sender, StiReportDataEventArgs e)
         {
             // Create new dashboard
             var report = StiReport.CreateNewDashboard();

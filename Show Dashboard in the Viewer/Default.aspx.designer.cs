@@ -7,11 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Show_Dashboard_in_the_Viewer {
-    
-    
-    public partial class _Default {
-        
+namespace Show_Dashboard_in_the_Viewer
+{
+
+
+    public partial class Default
+    {
+
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
         /// <summary>
         /// StiWebViewer1 control.
         /// </summary>
