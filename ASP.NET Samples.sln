@@ -5,19 +5,19 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web Demo", "Web Demo\Web Demo.csproj", "{357D5F55-267F-4EAA-94A7-0AFEC69569D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Show Dashboard in the Viewer", "Show Dashboard in the Viewer\Show Dashboard in the Viewer.csproj", "{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runtime Dashboard Creation", "Runtime Dashboard Creation\Runtime Dashboard Creation.csproj", "{D62B5881-92FE-48FD-B537-4E39BBF1F1F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edit Dashboard in the Designer", "Edit Dashboard in the Designer\Edit Dashboard in the Designer.csproj", "{B96E27B6-95FE-404D-B0D0-610F47A7061E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register Data for Dashboard Template", "Register Data for Dashboard Template\Register Data for Dashboard Template.csproj", "{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runtime Dashboard Creation", "Runtime Dashboard Creation\Runtime Dashboard Creation.csproj", "{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Export Dashboard from Code", "Export Dashboard from Code\Export Dashboard from Code.csproj", "{7547454A-0380-4F59-A288-C345FAFA042B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Show Dashboard in the Viewer", "Show Dashboard in the Viewer\Show Dashboard in the Viewer.csproj", "{187C9F0F-A8D4-492C-855A-741043C0D8CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using the Dashboard Theme on the Website", "Using the Dashboard Theme on the Website\Using the Dashboard Theme on the Website.csproj", "{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add Custom Function to the Designer", "Add Custom Function to the Designer\Add Custom Function to the Designer.csproj", "{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register Data for Dashboard Template", "Register Data for Dashboard Template\Register Data for Dashboard Template.csproj", "{6141E48D-EAF2-4225-AEBD-F71592D7455F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Export Dashboard from Code", "Export Dashboard from Code\Export Dashboard from Code.csproj", "{9D011A0E-E624-4941-B1FD-CAD727CA0705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edit Dashboard in the Designer", "Edit Dashboard in the Designer\Edit Dashboard in the Designer.csproj", "{538C1C8B-171B-40A7-AC01-2D5EDBB458D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add Custom Function to the Designer", "Add Custom Function to the Designer\Add Custom Function to the Designer.csproj", "{5E726A26-ACC1-46D2-AB67-3672783FA5B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,34 +29,34 @@ Global
 		{357D5F55-267F-4EAA-94A7-0AFEC69569D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{357D5F55-267F-4EAA-94A7-0AFEC69569D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{357D5F55-267F-4EAA-94A7-0AFEC69569D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEA24BF6-ECCD-4907-A8D4-BACFB491AD2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B96E27B6-95FE-404D-B0D0-610F47A7061E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B96E27B6-95FE-404D-B0D0-610F47A7061E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B96E27B6-95FE-404D-B0D0-610F47A7061E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B96E27B6-95FE-404D-B0D0-610F47A7061E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B257A98-16C2-4CD4-942F-D91D4C7DDB86}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92CDC22E-51C6-41E0-AE32-9AD9E3971D53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7547454A-0380-4F59-A288-C345FAFA042B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7547454A-0380-4F59-A288-C345FAFA042B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7547454A-0380-4F59-A288-C345FAFA042B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7547454A-0380-4F59-A288-C345FAFA042B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62B5881-92FE-48FD-B537-4E39BBF1F1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62B5881-92FE-48FD-B537-4E39BBF1F1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62B5881-92FE-48FD-B537-4E39BBF1F1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62B5881-92FE-48FD-B537-4E39BBF1F1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187C9F0F-A8D4-492C-855A-741043C0D8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187C9F0F-A8D4-492C-855A-741043C0D8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187C9F0F-A8D4-492C-855A-741043C0D8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187C9F0F-A8D4-492C-855A-741043C0D8CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0180B9F-5E5D-42E8-B220-AE5D1F7ABEB2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A90BF3A-B0E0-4178-AF25-C2FA84EDB65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6141E48D-EAF2-4225-AEBD-F71592D7455F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6141E48D-EAF2-4225-AEBD-F71592D7455F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6141E48D-EAF2-4225-AEBD-F71592D7455F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6141E48D-EAF2-4225-AEBD-F71592D7455F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D011A0E-E624-4941-B1FD-CAD727CA0705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D011A0E-E624-4941-B1FD-CAD727CA0705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D011A0E-E624-4941-B1FD-CAD727CA0705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D011A0E-E624-4941-B1FD-CAD727CA0705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538C1C8B-171B-40A7-AC01-2D5EDBB458D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538C1C8B-171B-40A7-AC01-2D5EDBB458D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538C1C8B-171B-40A7-AC01-2D5EDBB458D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538C1C8B-171B-40A7-AC01-2D5EDBB458D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E726A26-ACC1-46D2-AB67-3672783FA5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E726A26-ACC1-46D2-AB67-3672783FA5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E726A26-ACC1-46D2-AB67-3672783FA5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E726A26-ACC1-46D2-AB67-3672783FA5B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
