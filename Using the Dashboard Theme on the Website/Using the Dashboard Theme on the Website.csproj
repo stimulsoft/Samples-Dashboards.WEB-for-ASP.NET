@@ -43,52 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LibExcel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\LibExcel.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Stimulsoft.Base, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\Stimulsoft.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Dashboard, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2021.3.1\lib\net45\Stimulsoft.Dashboard.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Dashboard.Drawing, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2021.3.1\lib\net45\Stimulsoft.Dashboard.Drawing.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Dashboard.Export, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2021.3.1\lib\net45\Stimulsoft.Dashboard.Export.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Data, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\Stimulsoft.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Map, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\Stimulsoft.Map.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.MathFX, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\Stimulsoft.MathFX.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Report, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\Stimulsoft.Report.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Report.Check, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\Stimulsoft.Report.Check.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Report.Helper, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\Stimulsoft.Report.Helper.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Report.Mvc, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Web.2021.3.1\lib\net45\Stimulsoft.Report.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Report.Web, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Web.2021.3.1\lib\net45\Stimulsoft.Report.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Report.WebDesign, Version=2021.3.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Web.2021.3.1\lib\net45\Stimulsoft.Report.WebDesign.dll</HintPath>
-    </Reference>
-    <Reference Include="Svg, Version=2.4.3.29446, Culture=neutral, PublicKeyToken=12a0bac221edeae2, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.1\lib\net45\Svg.dll</HintPath>
-    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -142,6 +97,51 @@
     <Reference Include="Microsoft.AspNet.FriendlyUrls">
       <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
     </Reference>
+    <Reference Include="Stimulsoft.Dashboard, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2021.3.4\lib\net45\Stimulsoft.Dashboard.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Dashboard.Drawing, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2021.3.4\lib\net45\Stimulsoft.Dashboard.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Dashboard.Export, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2021.3.4\lib\net45\Stimulsoft.Dashboard.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="LibExcel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\LibExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Data, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\Stimulsoft.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Map, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\Stimulsoft.Map.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.MathFX, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\Stimulsoft.MathFX.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg, Version=2.4.3.29446, Culture=neutral, PublicKeyToken=12a0bac221edeae2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2021.3.4\lib\net45\Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mvc, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2021.3.4\lib\net45\Stimulsoft.Report.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2021.3.4\lib\net45\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebDesign, Version=2021.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2021.3.4\lib\net45\Stimulsoft.Report.WebDesign.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
@@ -151,44 +151,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Localization\ar.xml" />
-    <Content Include="Localization\be.xml" />
-    <Content Include="Localization\bg.xml" />
-    <Content Include="Localization\bh.xml" />
-    <Content Include="Localization\ca-ES.xml" />
-    <Content Include="Localization\cs.xml" />
-    <Content Include="Localization\de.xml" />
-    <Content Include="Localization\el-GR.xml" />
-    <Content Include="Localization\en-GB.xml" />
-    <Content Include="Localization\en.xml" />
-    <Content Include="Localization\es.xml" />
-    <Content Include="Localization\eu-ES.xml" />
-    <Content Include="Localization\fa.xml" />
-    <Content Include="Localization\fr.xml" />
-    <Content Include="Localization\gl-ES.xml" />
-    <Content Include="Localization\hr.xml" />
-    <Content Include="Localization\hu.xml" />
-    <Content Include="Localization\id.xml" />
-    <Content Include="Localization\it.xml" />
-    <Content Include="Localization\ja.xml" />
-    <Content Include="Localization\ka.xml" />
-    <Content Include="Localization\ko.xml" />
-    <Content Include="Localization\lt.xml" />
-    <Content Include="Localization\nb-NO.xml" />
-    <Content Include="Localization\nl.xml" />
-    <Content Include="Localization\pl.xml" />
-    <Content Include="Localization\pt-BR.xml" />
-    <Content Include="Localization\pt.xml" />
-    <Content Include="Localization\ro.xml" />
-    <Content Include="Localization\ru.xml" />
-    <Content Include="Localization\sk.xml" />
-    <Content Include="Localization\sr.xml" />
-    <Content Include="Localization\sv.xml" />
-    <Content Include="Localization\tr.xml" />
-    <Content Include="Localization\uk.xml" />
-    <Content Include="Localization\vi.xml" />
-    <Content Include="Localization\zh-CHS.xml" />
-    <Content Include="Localization\zh-CHT.xml" />
     <Content Include="Viewer.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -241,6 +203,44 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="Localization\ar.xml" />
+    <Content Include="Localization\be.xml" />
+    <Content Include="Localization\bg.xml" />
+    <Content Include="Localization\bh.xml" />
+    <Content Include="Localization\ca-ES.xml" />
+    <Content Include="Localization\cs.xml" />
+    <Content Include="Localization\de.xml" />
+    <Content Include="Localization\el-GR.xml" />
+    <Content Include="Localization\en-GB.xml" />
+    <Content Include="Localization\en.xml" />
+    <Content Include="Localization\es.xml" />
+    <Content Include="Localization\eu-ES.xml" />
+    <Content Include="Localization\fa.xml" />
+    <Content Include="Localization\fr.xml" />
+    <Content Include="Localization\gl-ES.xml" />
+    <Content Include="Localization\hr.xml" />
+    <Content Include="Localization\hu.xml" />
+    <Content Include="Localization\id.xml" />
+    <Content Include="Localization\it.xml" />
+    <Content Include="Localization\ja.xml" />
+    <Content Include="Localization\ka.xml" />
+    <Content Include="Localization\ko.xml" />
+    <Content Include="Localization\lt.xml" />
+    <Content Include="Localization\nb-NO.xml" />
+    <Content Include="Localization\nl.xml" />
+    <Content Include="Localization\pl.xml" />
+    <Content Include="Localization\pt-BR.xml" />
+    <Content Include="Localization\pt.xml" />
+    <Content Include="Localization\ro.xml" />
+    <Content Include="Localization\ru.xml" />
+    <Content Include="Localization\sk.xml" />
+    <Content Include="Localization\sr.xml" />
+    <Content Include="Localization\sv.xml" />
+    <Content Include="Localization\tr.xml" />
+    <Content Include="Localization\uk.xml" />
+    <Content Include="Localization\vi.xml" />
+    <Content Include="Localization\zh-CHS.xml" />
+    <Content Include="Localization\zh-CHT.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
