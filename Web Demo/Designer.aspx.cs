@@ -1,5 +1,8 @@
 ﻿using Stimulsoft.Report;
+using Stimulsoft.Report.Web;
 using System;
+using System.Data;
+using System.Web;
 
 namespace Web_Demo
 {
@@ -13,19 +16,35 @@ namespace Web_Demo
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
         }
 
+        private string appDirectory = HttpContext.Current.Server.MapPath(string.Empty);     
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void StiWebDesigner1_GetReport(object sender, Stimulsoft.Report.Web.StiReportDataEventArgs e)
-        {
-            var fileName = Page.Request.QueryString.Get("id") ?? "DashboardChristmas";
+            // Get the report name fror URL query
+            string keyValue = Page.Request.QueryString.Get("reportname");
+            if (keyValue == null) keyValue = "DashboardChristmas";
 
             var report = StiReport.CreateNewDashboard();
-            report.Load(Server.MapPath($"~/Dashboards/{fileName}.mrt"));
+            report.Load(string.Format("{0}\\Dashboards\\{1}.mrt", appDirectory, keyValue));
+            StiWebDesigner1.Report = report;
+        }
 
-            e.Report = report;
+        protected void StiWebDesigner1_SaveReport(object sender, StiSaveReportEventArgs e)
+        {
+            var report = e.Report;
+
+            // string packedReport = report.SavePackedReportToString();
+            // ...
+            // The save report code here
+            // ...
+        }
+
+        protected void StiWebDesigner1_Exit(object sender, StiReportDataEventArgs e)
+        {
+            string keyValue = Page.Request.QueryString.Get("reportname");
+            if (keyValue == null) keyValue = "DashboardChristmas";
+
+            this.Response.Redirect("Viewer.aspx?reportname=" + keyValue, true);
         }
     }
 }

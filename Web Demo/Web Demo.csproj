@@ -159,13 +159,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Viewer.aspx" />
+    <Content Include="Images\Dashboard_x2.png" />
+    <Content Include="Scripts\demo.js" />
+    <Content Include="Styles\demo.css" />
     <Content Include="Default.aspx" />
     <Content Include="Designer.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="Global.asax" />
     <Content Include="Dashboards\DashboardChristmas.mrt" />
     <Content Include="Dashboards\DashboardCustomerServiceKPI.mrt" />
     <Content Include="Dashboards\DashboardEducation.mrt" />
@@ -216,39 +216,7 @@
     <Content Include="Dashboards\DashboardUserActivityStats.mrt" />
     <Content Include="Dashboards\DashboardVehicleProduction.mrt" />
     <Content Include="Dashboards\DashboardWebsiteAnalytics.mrt" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Images\hyperlink.png" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\WebForms\DetailsView.js" />
-    <Content Include="Scripts\WebForms\Focus.js" />
-    <Content Include="Scripts\WebForms\GridView.js" />
-    <Content Include="Scripts\WebForms\Menu.js" />
-    <Content Include="Scripts\WebForms\MenuStandards.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
-    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
-    <Content Include="Scripts\WebForms\SmartNav.js" />
-    <Content Include="Scripts\WebForms\TreeView.js" />
-    <Content Include="Scripts\WebForms\WebForms.js" />
-    <Content Include="Scripts\WebForms\WebParts.js" />
-    <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Site.Master" />
-    <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
-    <Content Include="Bundle.config" />
-    <Content Include="Site.Mobile.Master" />
     <Content Include="Localization\ar.xml" />
     <Content Include="Localization\be.xml" />
     <Content Include="Localization\bg.xml" />
@@ -289,28 +257,19 @@
     <Content Include="Localization\zh-CHT.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer.aspx.cs">
+      <DependentUpon>Viewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Viewer.aspx.designer.cs">
+      <DependentUpon>Viewer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Designer.aspx.cs">
       <DependentUpon>Designer.aspx</DependentUpon>
@@ -319,39 +278,11 @@
     <Compile Include="Designer.aspx.designer.cs">
       <DependentUpon>Designer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

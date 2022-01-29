@@ -11,7 +11,7 @@ namespace Web_Demo
 {
 
 
-    public partial class Designer
+    public partial class Viewer
     {
 
         /// <summary>
@@ -24,12 +24,12 @@ namespace Web_Demo
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// StiWebDesigner1 control.
+        /// StiWebViewer1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Stimulsoft.Report.Web.StiWebDesigner StiWebDesigner1;
+        protected global::Stimulsoft.Report.Web.StiWebViewer StiWebViewer1;
     }
 }
