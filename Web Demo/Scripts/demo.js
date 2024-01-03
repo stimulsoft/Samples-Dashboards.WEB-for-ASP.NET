@@ -10,12 +10,9 @@ function createReportsButtons() {
             reports: {
                 "DashboardChristmas": "Christmas",
                 "DashboardTrafficAnalytics": "Traffic Analytics",
-                "DashboardSalesByMonth": "Sales By Month",
                 "DashboardSalesPerfomance": "Sales Performance",
                 "DashboardSalesStatistics": "Sales Statistics",
                 "DashboardTicketsStatistics": "Tickets Statistics",
-                "DashboardSocialNetworksStatistics": "Social Networks Statistics",
-                "DashboardFinancial": "Financial",
                 "DashboardProducts": "Products"
             }
         },
@@ -23,7 +20,6 @@ function createReportsButtons() {
             category: "Miscellaneous Dashboards",
             reports: {
                 "DashboardFastFoodLunch": "Fast Food Lunch",
-                "DashboardOpec": "Opec",
                 "DashboardNascar": "Nascar",
                 "DashboardFitnessAndHealthStats": "Fitness And Health Stats",
                 "DashboardManufacturing": "Manufacturing"
@@ -33,8 +29,6 @@ function createReportsButtons() {
             category: "Sales Dashboards",
             reports: {
                 "DashboardSalesByCompanies": "Sales By Companies",
-                "DashboardSalesOverview": "Sales Overview",
-                "DashboardSiteStatistics": "Site Statistics",
                 "DashboardVehicleProduction": "Vehicle Production",
                 "DashboardSummary": "Summary"
             }
@@ -42,15 +36,11 @@ function createReportsButtons() {
         {
             category: "Social Dashboards",
             reports: {
-                "DashboardGlobalInternetUsage": "Global Internet Usage",
-                "DashboardPopulationByState": "Population By State",
-                "DashboardSupportKPI": "Support KPI",
                 "DashboardSaaSMetrics": "SaaS Metrics",
                 "DashboardSaaSKPI": "SaaS KPI",
                 "DashboardCustomerServiceKPI": "Customer Service KPI",
                 "DashboardManufacturingKPI": "Manufacturing KPI",
-                "DashboardRetailKPI": "Retail KPI",
-                "DashboardMarketingKPI": "Marketing KPI"
+                "DashboardRetailKPI": "Retail KPI"
             }
         },
         {
@@ -58,20 +48,16 @@ function createReportsButtons() {
             reports: {
                 "DashboardEducation": "Education",
                 "DashboardFinancesKPI": "Finances KPI",
-                "DashboardStudentsKPI": "Students KPI",
-                "DashboardUniversityKPI": "University KPI"
+                "DashboardStudentsKPI": "Students KPI"
             }
         },
         {
             category: "Healthcare Dashboards",
             reports: {
-                "DashboardEmergencyKPI": "Emergency KPI",
                 "DashboardFinanceKPI": "Finance KPI",
                 "DashboardHospitalOverview": "Hospital Overview",
                 "DashboardHospitalPerformance": "Hospital Performance",
-                "DashboardInternalKPI": "Internal KPI",
                 "DashboardMedical": "Medical",
-                "DashboardOperationsKPI": "Operations KPI",
                 "DashboardPatientHealthKPI": "Patient Health KPI",
                 "DashboardPatientSatisfaction": "Patient Satisfaction",
                 "DashboardPublicHealthKPI": "Public Health KPI"
@@ -92,15 +78,10 @@ function createReportsButtons() {
             category: "Real-life Dashboards",
             reports: {
                 "DashboardAlibabaRevenue": "Alibaba Revenue",
-                "DashboardCarSalesInChina": "Car Sales in China",
                 "DashboardChinaConstructionBank": "China Construction Bank",
-                "DashboardEURUSDConversion": "EUR-USD Conversion",
-                "DashboardGDPOfChina": "GDP Of China",
                 "DashboardInternetApplicationTrendsInChina": "Internet Application Trends in China",
                 "DashboardManufactureInChina": "Manufacture in China",
                 "DashboardOPECOilProduction": "OPEC Oil Production",
-                "DashboardPhoneSalesInChina": "Phone Sales in China",
-                "DashboardTop50CountriesByUrbanization": "Top 50 Countries by Urbanization",
                 "DashboardTopOfExpensiveBuildingsInChina": "Top of Expensive Buildings in China",
                 "DashboardWorldElectricityConsumptionPerCapita": "World Electricity Consumption per Capita",
                 "DashboardUsersStatisticRegionalMap": "Users Statistic Regional Map"
