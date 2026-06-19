@@ -17,7 +17,7 @@ namespace Web_Demo
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
-            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromFile("stimulsoft.key");
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
         }
 
@@ -25,7 +25,7 @@ namespace Web_Demo
         {
             var report = StiReport.CreateNewDashboard();
             var reportName = "DashboardChristmas";
-            
+
             if (!string.IsNullOrEmpty(Page.Request.QueryString.Get("reportname")))
             {
                 reportName = Page.Request.QueryString.Get("reportname");
@@ -33,7 +33,7 @@ namespace Web_Demo
 
             report.Load(string.Format("{0}\\Dashboards\\{1}.mrt", appDirectory, reportName));
 
-        e.Report = report;
+            e.Report = report;
 
         }
 

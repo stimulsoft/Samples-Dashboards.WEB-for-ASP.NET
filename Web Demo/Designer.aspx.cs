@@ -12,11 +12,11 @@ namespace Web_Demo
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
-            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromFile("stimulsoft.key");
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
         }
 
-        private string appDirectory = HttpContext.Current.Server.MapPath(string.Empty);     
+        private string appDirectory = HttpContext.Current.Server.MapPath(string.Empty);
 
         protected void Page_Load(object sender, EventArgs e)
         {
